@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/twu-biblioteca-terencelim.iml" filepath="$PROJECT_DIR$/.idea/modules/twu-biblioteca-terencelim.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/twu-biblioteca-terencelim_main.iml" filepath="$PROJECT_DIR$/.idea/modules/twu-biblioteca-terencelim_main.iml" group="twu-biblioteca-terencelim" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/twu-biblioteca-terencelim_test.iml" filepath="$PROJECT_DIR$/.idea/modules/twu-biblioteca-terencelim_test.iml" group="twu-biblioteca-terencelim" />
+    </modules>
+  </component>
+</project>
