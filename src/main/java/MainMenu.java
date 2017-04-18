@@ -1,24 +1,28 @@
 public class MainMenu {
+    public static String welcomeMessage = "Welcome to Biblioteca!";
+    public static String exitMessage = "Hope to see you again!";
+    public static String wrongInputMessage = "Please select a valid option!";
 
-    public static String getOptions() {
-        return "Please select an option\n" +
+    public static String get() {
+        return "Select an option\n" +
                 "1. List Books\n" +
                 "2. Quit Application";
     }
 
-
-    public String menuResponse(int mainMenuInput) {
+    public String getResponse(int mainMenuInput) throws Exception {
         String menuMessage = "";
         BookDatabase bookDatabase = new BookDatabase();
 
-        if (mainMenuInput == 1) {
-            menuMessage = bookDatabase.toString();
-        } else if (mainMenuInput == 2) {
-            menuMessage = Message.getExitMessage();
-        } else {
-            menuMessage = Message.getWrongInputMessage();
+        switch (mainMenuInput) {
+            case 1: menuMessage = bookDatabase.toString();
+            break;
+            case 2: menuMessage = exitMessage;
+            break;
+            default: menuMessage = wrongInputMessage;
+            break;
         }
 
         return menuMessage;
     }
+
 }

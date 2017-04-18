@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MainMenuTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-04-18T09:06:23" hostname="sg-5.local" time="0.001">
+<testsuite name="MainMenuTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-04-18T10:07:40" hostname="sg-5.local" time="0.0">
   <properties/>
-  <testcase name="testMainMenuInputListBooks" classname="MainMenuTest" time="0.0"/>
-  <testcase name="testMainMenuDisplay" classname="MainMenuTest" time="0.001"/>
+  <testcase name="testMainMenuInvalidResponse" classname="MainMenuTest" time="0.0"/>
+  <testcase name="testMainMenuExitResponse" classname="MainMenuTest" time="0.0"/>
+  <testcase name="testMainMenuDisplay" classname="MainMenuTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

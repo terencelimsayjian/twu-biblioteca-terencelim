@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="BookStringBuilderTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-04-18T09:06:23" hostname="sg-5.local" time="0.001">
+<testsuite name="BookStringBuilderTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-04-18T10:07:40" hostname="sg-5.local" time="0.002">
   <properties/>
   <testcase name="testAuthorToString" classname="BookStringBuilderTest" time="0.0"/>
-  <testcase name="testLongTitleToString" classname="BookStringBuilderTest" time="0.0"/>
+  <testcase name="testLongTitleToString" classname="BookStringBuilderTest" time="0.001"/>
   <testcase name="testBookToString" classname="BookStringBuilderTest" time="0.0"/>
   <testcase name="testTitleStringBuilder" classname="BookStringBuilderTest" time="0.0"/>
   <testcase name="testDivider" classname="BookStringBuilderTest" time="0.0"/>

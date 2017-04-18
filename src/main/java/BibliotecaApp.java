@@ -5,19 +5,24 @@ public class BibliotecaApp {
     public static void main(String[] args) {
         MainMenu mainMenu = new MainMenu();
 
-        System.out.println(Message.getWelcomeMessage());
-
+        print(MainMenu.welcomeMessage);
 
         int mainMenuInput = 0;
-
         while (mainMenuInput != 2) {
-            System.out.println(MainMenu.getOptions());
-            Scanner sc = new Scanner(System.in);
-            mainMenuInput = sc.nextInt();
+            print(MainMenu.get());
 
-            System.out.println(mainMenu.menuResponse(mainMenuInput));
+            try {
+                Scanner sc = new Scanner(System.in);
+                mainMenuInput = sc.nextInt();
+                print(mainMenu.getResponse(mainMenuInput));
+            } catch (Exception e) {
+                print(MainMenu.wrongInputMessage);
+            }
         }
+    }
 
+    private static void print(String str) {
+        System.out.println(str);
     }
 
 }

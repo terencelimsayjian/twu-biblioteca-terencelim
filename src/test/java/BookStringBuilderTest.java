@@ -72,7 +72,7 @@ public class BookStringBuilderTest {
     }
 
     @Test
-    public void testDivider() throws Exception {
+    public void testDivider() {
         assertEquals(bookStringBuilder.buildDivider().length(), totalStringLength);
     }
 }

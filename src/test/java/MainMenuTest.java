@@ -6,15 +6,35 @@ public class MainMenuTest {
 
     @Test
     public void testMainMenuDisplay() {
-        String mainMenuString = "Please select an option\n" +
+        String mainMenuString = "Select an option\n" +
                 "1. List Books\n" +
                 "2. Quit Application";
 
-        assertEquals(MainMenu.getOptions(), mainMenuString);
+        assertEquals(MainMenu.get(), mainMenuString);
     }
 
     @Test
-    public void testMainMenuInputListBooks() {
+    public void testMainMenuExitResponse() {
+        MainMenu mainMenu = new MainMenu();
+        String menuResponse = "";
+        try {
+            menuResponse = mainMenu.getResponse(2);
+            assertEquals(menuResponse, MainMenu.exitMessage);
+        } catch (Exception ex) {
+
+        }
+    }
+
+    @Test
+    public void testMainMenuInvalidResponse() {
+        MainMenu mainMenu = new MainMenu();
+        String menuResponse = "";
+        try {
+            menuResponse = mainMenu.getResponse(3);
+            assertEquals(menuResponse, MainMenu.wrongInputMessage);
+        } catch (Exception ex) {
+
+        }
     }
 
 }
