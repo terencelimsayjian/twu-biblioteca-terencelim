@@ -1,0 +1,10 @@
+-classpath '/Users/terence/IdeaProjects/twu-biblioteca-terencelim/build/classes/main:/Users/terence/IdeaProjects/twu-biblioteca-terencelim/build/resources/main'
+-d '/Users/terence/IdeaProjects/twu-biblioteca-terencelim/build/docs/javadoc'
+-doctitle 'twu-biblioteca-terencelim 1.0-SNAPSHOT API'
+-quiet 
+-windowtitle 'twu-biblioteca-terencelim 1.0-SNAPSHOT API'
+'/Users/terence/IdeaProjects/twu-biblioteca-terencelim/src/main/java/BibliotecaApp.java'
+'/Users/terence/IdeaProjects/twu-biblioteca-terencelim/src/main/java/Book.java'
+'/Users/terence/IdeaProjects/twu-biblioteca-terencelim/src/main/java/BookDatabase.java'
+'/Users/terence/IdeaProjects/twu-biblioteca-terencelim/src/main/java/BookStringBuilder.java'
+'/Users/terence/IdeaProjects/twu-biblioteca-terencelim/src/main/java/Message.java'

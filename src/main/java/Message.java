@@ -4,6 +4,14 @@ public abstract class Message {
         return "Welcome to Biblioteca!";
     }
 
+    public static String getExitMessage() {
+        return "Hope to see you again!";
+    }
+
+    public static String getWrongInputMessage() {
+        return "Please enter a valid option!";
+    }
+
     public static String getBibliotecaRap() {
         return "Donde,\uFEFF está, la biblioteca.\n" +
                 "Me llamo T-Bone La araña discoteca.\n" +
