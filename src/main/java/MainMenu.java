@@ -14,7 +14,6 @@ public class MainMenu {
 
     public String getResponse(int mainMenuInput) {
         String menuMessage = "";
-        LibraryBookDatabase libraryBookDatabase = new LibraryBookDatabase();
 
         switch (mainMenuInput) {
             case 1: menuMessage = availableBookMessage;

@@ -12,7 +12,6 @@ public class BibliotecaApp {
         int mainMenuInput = 1;
         while (mainMenuInput != EXIT_INPUT) {
             print(MainMenu.get());
-
             mainMenuInput = getIntegerInput();
             print(mainMenu.getResponse(mainMenuInput));
 
