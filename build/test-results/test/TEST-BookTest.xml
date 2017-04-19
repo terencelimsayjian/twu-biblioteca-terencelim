@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="BookTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-04-18T10:07:40" hostname="sg-5.local" time="0.0">
+<testsuite name="BookTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-04-19T08:05:38" hostname="sg-6.local" time="0.001">
   <properties/>
   <testcase name="testGetTitle" classname="BookTest" time="0.0"/>
+  <testcase name="testGetId" classname="BookTest" time="0.0"/>
   <testcase name="testGetAuthor" classname="BookTest" time="0.0"/>
   <testcase name="testGetYearPublished" classname="BookTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>

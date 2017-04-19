@@ -1,25 +1,33 @@
-import org.junit.Test;
+import org.junit.*;
 
 import static org.junit.Assert.*;
 
 public class BookTest {
+    Book book;
+
+    @Before
+    public void setUp() throws Exception {
+        book = new Book(1, "Harry Potter", "J.K. Rowling", 2003);
+    }
 
     @Test
     public void testGetTitle() {
-        Book harryPotter = new Book("Harry Potter", "J.K. Rowling", 2003);
-        assertEquals(harryPotter.getTitle(), "Harry Potter");
+        assertEquals(book.getTitle(), "Harry Potter");
     }
 
     @Test
     public void testGetAuthor() {
-        Book theMagicians = new Book("The Magicians", "Lev Grossman", 2005);
-        assertEquals(theMagicians.getAuthor(), "Lev Grossman");
+        assertEquals(book.getAuthor(), "J.K. Rowling");
     }
 
     @Test
     public void testGetYearPublished() {
-        Book americanGods = new Book("American Gods", "Neil Gaiman", 2008);
-        assertEquals(americanGods.getYearPublished(), 2008);
+        assertEquals(book.getYearPublished(), 2003);
+    }
+
+    @Test
+    public void testGetId() {
+        assertEquals(book.getId(), 1);
     }
 
 }

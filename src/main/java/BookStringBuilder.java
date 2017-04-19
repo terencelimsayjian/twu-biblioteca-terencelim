@@ -1,17 +1,27 @@
 public class BookStringBuilder {
-    private int titleStringLength = 40;
-    private int authorStringLength = 20;
-    private int yearPublishedStringLength = 14;
-    private String divider = " | ";
-    private int totalStringLength;
+    public int idStringLength = 3;
+    public int titleStringLength = 40;
+    public int authorStringLength = 20;
+    public int yearPublishedStringLength = 14;
+    public String divider = " | ";
+    public int totalStringLength;
 
     public BookStringBuilder() {
-        totalStringLength = titleStringLength + authorStringLength + yearPublishedStringLength
-                + divider.length() + divider.length();
+        totalStringLength = idStringLength + divider.length() +
+                titleStringLength + divider.length() +
+                authorStringLength + divider.length() + yearPublishedStringLength;
     }
 
     public String build(Book book) {
-        return buildTitle(book) + divider + buildAuthor(book) + divider + buildYearPublished(book);
+        return buildId(book) + divider +
+                buildTitle(book) + divider +
+                buildAuthor(book) + divider +
+                buildYearPublished(book);
+    }
+
+    public String buildId(Book book) {
+        String idString = Integer.toString(book.getId());
+        return formatStringToFixedLength(idString, idStringLength);
     }
 
     public String buildTitle(Book book) {
@@ -28,6 +38,9 @@ public class BookStringBuilder {
     }
 
     public String buildHeader() {
+        String idHeaderString = "#";
+        idHeaderString = formatStringToFixedLength(idHeaderString, idStringLength);
+
         String titleHeaderString = "Title";
         titleHeaderString = formatStringToFixedLength(titleHeaderString, titleStringLength);
 
@@ -35,7 +48,10 @@ public class BookStringBuilder {
         authorHeaderString = formatStringToFixedLength(authorHeaderString, authorStringLength);
 
         String yearPublishedHeaderString = "Year Published";
-        String headerString = titleHeaderString + divider + authorHeaderString + divider + yearPublishedHeaderString;
+        String headerString = idHeaderString + divider +
+                titleHeaderString + divider
+                + authorHeaderString + divider
+                + yearPublishedHeaderString;
 
         return headerString;
     }
