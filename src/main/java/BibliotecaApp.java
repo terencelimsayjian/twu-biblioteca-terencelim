@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class BibliotecaApp {
+    private static int EXIT_INPUT = 0;
 
     public static void main(String[] args) {
         MainMenu mainMenu = new MainMenu();
@@ -8,8 +9,8 @@ public class BibliotecaApp {
 
         print(MainMenu.welcomeMessage);
 
-        int mainMenuInput = 0;
-        while (mainMenuInput != 3) {
+        int mainMenuInput = 1;
+        while (mainMenuInput != EXIT_INPUT) {
             print(MainMenu.get());
 
             mainMenuInput = getIntegerInput();
@@ -18,10 +19,8 @@ public class BibliotecaApp {
             if (mainMenuInput == 1) {
 
                 int bookMenuInput = 1;
-                while (bookMenuInput != 0) {
+                while (bookMenuInput != EXIT_INPUT) {
                     print(bookMenu.getAvailableBooks());
-                    print("Pick book to borrow");
-                    print("0: Exit this menu");
                     bookMenuInput = getIntegerInput();
                     print(bookMenu.getBookCheckoutResponse(bookMenuInput));
                 }
@@ -29,10 +28,8 @@ public class BibliotecaApp {
             } else if (mainMenuInput == 2) {
 
                 int returnBookInput = 1;
-                while (returnBookInput != 0) {
+                while (returnBookInput != EXIT_INPUT) {
                     print(bookMenu.getBorrowedBooks());
-                    print("Pick book to return");
-                    print("0: Exit this menu");
                     returnBookInput = getIntegerInput();
                     print(bookMenu.getBookReturnResponse(returnBookInput));
                 }
@@ -47,13 +44,14 @@ public class BibliotecaApp {
     }
 
     private static int getIntegerInput() {
-        int input = 0;
+        int input = -1;
         try {
             Scanner sc = new Scanner(System.in);
             input = sc.nextInt();
         } catch (Exception e) {
-            print("Please input a number!");
+            print("Please input a valid number!");
         }
+
         return input;
     }
 

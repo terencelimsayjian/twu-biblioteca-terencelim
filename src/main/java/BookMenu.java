@@ -6,23 +6,27 @@ public class BookMenu {
     public static String bookReturnedMessage = "Book successfully returned. Thank you!";
 
     public String getAvailableBooks() {
-        return libraryBookDatabase.availableBooksToString();
+        return libraryBookDatabase.availableBooksToString() + "\n" +
+                "Pick book to borrow" + "\n" +
+                "0: Exit this menu";
     }
 
     public String getBorrowedBooks() {
-        return libraryBookDatabase.booksOnLoanToString();
+        return libraryBookDatabase.booksOnLoanToString() + "\n" +
+                "Pick book to return" + "\n" +
+                "0: Exit this menu";
     }
 
     public String getBookCheckoutResponse(int bookMenuInput) {
         String menuMessage = "";
-        Book checkedOutBook = libraryBookDatabase.checkoutBook(bookMenuInput);
+        boolean succeededCheckout = libraryBookDatabase.checkoutBook(bookMenuInput);
 
-        if (bookMenuInput == 0) {
-
-        } else if (checkedOutBook == null) {
-            menuMessage = bookUnavailableMessage;
-        } else {
+        if (succeededCheckout) {
             menuMessage = bookCheckedOutMessage;
+        } else if (bookMenuInput == 0) {
+            menuMessage = "";
+        } else if (!succeededCheckout) {
+            menuMessage = bookUnavailableMessage;
         }
 
         return menuMessage;
@@ -30,14 +34,14 @@ public class BookMenu {
 
     public String getBookReturnResponse(int bookMenuInput){
         String menuMessage = "";
-        Book checkedOutBook = libraryBookDatabase.returnBook(bookMenuInput);
+        boolean succeededReturn = libraryBookDatabase.returnBook(bookMenuInput);
 
-        if (bookMenuInput == 0) {
-
-        } else if (checkedOutBook == null) {
-            menuMessage = invalidReturnBookMessage;
-        } else {
+        if (succeededReturn) {
             menuMessage = bookReturnedMessage;
+        } else if (bookMenuInput == 0) {
+            menuMessage = "";
+        } else if (!succeededReturn) {
+            menuMessage = invalidReturnBookMessage;
         }
 
         return menuMessage;

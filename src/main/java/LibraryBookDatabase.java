@@ -17,33 +17,33 @@ public class LibraryBookDatabase {
         return booksOnLoan;
     }
 
-    public Book checkoutBook(int bookId) {
-        Book checkedOutBook = null;
+    public boolean checkoutBook(int bookId) {
+        boolean succeededCheckout = false;
         for (Book book : availableBooks) {
             if (book.getId() == bookId) {
                 availableBooks.remove(book);
                 booksOnLoan.add(book);
-                checkedOutBook = book;
+                succeededCheckout = true;
                 break;
             }
         }
 
-        return checkedOutBook;
+        return succeededCheckout;
     }
 
-    public Book returnBook(int bookId) {
-        Book returnedBook = null;
+    public boolean returnBook(int bookId) {
+        boolean succeedReturn = false;
 
         for (Book book : booksOnLoan) {
             if (book.getId() == bookId) {
                 booksOnLoan.remove(book);
                 availableBooks.add(book);
-                returnedBook = book;
+                succeedReturn = true;
                 break;
             }
         }
 
-        return returnedBook;
+        return succeedReturn;
     }
 
     private String toTable(ArrayList<Book> bookList) {

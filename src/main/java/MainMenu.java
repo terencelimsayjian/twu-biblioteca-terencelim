@@ -9,7 +9,7 @@ public class MainMenu {
         return "Select an option\n" +
                 "1. List Books\n" +
                 "2. Return Books\n" +
-                "3. Quit Application";
+                "0. Quit Application";
     }
 
     public String getResponse(int mainMenuInput) {
