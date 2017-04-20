@@ -1,11 +1,17 @@
-public class BorrowBookMenu implements Menu {
-    LibraryBookDatabase libraryBookDatabase;
-    public static String bookUnavailableMessage = "That book is not available";
-    public static String bookCheckedOutMessage = "Book checked out. Enjoy your book!";
-    private int nextMenu;
+package menuprocessor;
 
-    public BorrowBookMenu(LibraryBookDatabase libraryBookDatabase) {
+import database.LibraryBookDatabase;
+
+public class BorrowBookMenu implements Menu {
+    public static String bookUnavailableMessage = "That book is not available";
+    public static String bookCheckedOutMessage = "model.Book checked out. Enjoy your book!";
+
+    LibraryBookDatabase libraryBookDatabase;
+    MenuRouter menuRouter;
+
+    public BorrowBookMenu(LibraryBookDatabase libraryBookDatabase, MenuRouter menuRouter) {
         this.libraryBookDatabase = libraryBookDatabase;
+        this.menuRouter = menuRouter;
     }
 
     @Override
@@ -21,23 +27,17 @@ public class BorrowBookMenu implements Menu {
         boolean succeededCheckout = libraryBookDatabase.checkoutBook(bookMenuInput);
 
         if (succeededCheckout) {
-            nextMenu = MenuRouter.MAIN_MENU;
+            menuRouter.setCurrentMenu(MenuRouter.MAIN_MENU);
             menuMessage = bookCheckedOutMessage;
         } else if (bookMenuInput == MenuRouter.EXIT) {
-            nextMenu = MenuRouter.MAIN_MENU;
+            menuRouter.setCurrentMenu(MenuRouter.MAIN_MENU);
             menuMessage = "";
         } else if (!succeededCheckout) {
-            nextMenu = MenuRouter.BORROW_BOOK_MENU;
+            menuRouter.setCurrentMenu(MenuRouter.BORROW_BOOK_MENU);
             menuMessage = bookUnavailableMessage;
         }
 
         return menuMessage;
     }
-
-    @Override
-    public int getNextMenuId() {
-        return nextMenu;
-    }
-
 
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="BookStringBuilderTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-04-20T03:42:43" hostname="sg-6.local" time="0.002">
+<testsuite name="BookStringBuilderTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-04-20T08:10:39" hostname="sg-6.local" time="0.003">
   <properties/>
   <testcase name="testAuthorToString" classname="BookStringBuilderTest" time="0.001"/>
   <testcase name="testLongTitleToString" classname="BookStringBuilderTest" time="0.0"/>

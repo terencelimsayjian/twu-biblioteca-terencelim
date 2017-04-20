@@ -1,3 +1,8 @@
+package database;
+
+import helper.BookStringBuilder;
+import model.Book;
+
 import java.util.ArrayList;
 
 public class LibraryBookDatabase {

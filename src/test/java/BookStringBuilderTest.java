@@ -1,3 +1,5 @@
+import helper.BookStringBuilder;
+import model.Book;
 import org.junit.Before;
 import org.junit.Test;
 

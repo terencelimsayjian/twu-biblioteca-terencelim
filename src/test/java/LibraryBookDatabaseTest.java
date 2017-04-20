@@ -1,3 +1,5 @@
+import database.LibraryBookDatabase;
+import model.Book;
 import org.junit.Before;
 import org.junit.Test;
 

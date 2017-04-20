@@ -1,11 +1,17 @@
-public class ReturnBookMenu implements Menu {
-    LibraryBookDatabase libraryBookDatabase;
-    public static String invalidReturnBookMessage = "Not a valid book to return!";
-    public static String bookReturnedMessage = "Book successfully returned. Thank you!";
-    private int nextMenu;
+package menuprocessor;
 
-    public ReturnBookMenu(LibraryBookDatabase libraryBookDatabase) {
+import database.LibraryBookDatabase;
+
+public class ReturnBookMenu implements Menu {
+    public static String invalidReturnBookMessage = "Not a valid book to return!";
+    public static String bookReturnedMessage = "model.Book successfully returned. Thank you!";
+
+    LibraryBookDatabase libraryBookDatabase;
+    MenuRouter menuRouter;
+
+    public ReturnBookMenu(LibraryBookDatabase libraryBookDatabase, MenuRouter menuRouter) {
         this.libraryBookDatabase = libraryBookDatabase;
+        this.menuRouter = menuRouter;
     }
 
     @Override
@@ -21,21 +27,17 @@ public class ReturnBookMenu implements Menu {
         boolean succeededReturn = libraryBookDatabase.returnBook(bookMenuInput);
 
         if (succeededReturn) {
-            nextMenu = MenuRouter.MAIN_MENU;
+            menuRouter.setCurrentMenu(MenuRouter.MAIN_MENU);
             menuMessage = bookReturnedMessage;
         } else if (bookMenuInput == MenuRouter.EXIT) {
-            nextMenu = MenuRouter.MAIN_MENU;
+            menuRouter.setCurrentMenu(MenuRouter.MAIN_MENU);
             menuMessage = "";
         } else if (!succeededReturn) {
-            nextMenu = MenuRouter.RETURN_BOOK_MENU;
+            menuRouter.setCurrentMenu(MenuRouter.RETURN_BOOK_MENU);
             menuMessage = invalidReturnBookMessage;
         }
 
         return menuMessage;
     }
 
-    @Override
-    public int getNextMenuId() {
-        return nextMenu;
-    }
 }

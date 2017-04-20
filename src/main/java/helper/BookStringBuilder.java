@@ -1,3 +1,7 @@
+package helper;
+
+import model.Book;
+
 public class BookStringBuilder {
     public int idStringLength = 3;
     public int titleStringLength = 40;

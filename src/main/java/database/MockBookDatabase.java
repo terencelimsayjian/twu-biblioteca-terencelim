@@ -1,3 +1,7 @@
+package database;
+
+import model.Book;
+
 import java.util.ArrayList;
 import java.util.List;
 

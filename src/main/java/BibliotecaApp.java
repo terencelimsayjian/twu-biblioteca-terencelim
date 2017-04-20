@@ -1,21 +1,19 @@
+import menuprocessor.MenuRouter;
+
 import java.util.Scanner;
 
 public class BibliotecaApp {
+    private static String welcomeMessage = "Welcome to Biblioteca!";
+    private static String invalidInput = "Invalid input. Please input a number!";
+
     public static void main(String[] args) {
         MenuRouter menuRouter = new MenuRouter();
-        boolean appRunning = true;
+        print(welcomeMessage);
 
-        while (appRunning) {
+        while (menuRouter.appRunning) {
             print(menuRouter.getOptions());
             int input = getIntegerInput();
             print(menuRouter.getResponse(input));
-
-            try {
-                menuRouter.getNextMenu();
-            } catch (Exception e) {
-                appRunning = false;
-            }
-
         }
     }
 
@@ -29,7 +27,7 @@ public class BibliotecaApp {
             Scanner sc = new Scanner(System.in);
             input = sc.nextInt();
         } catch (Exception e) {
-            print("Invalid input. Please input a number!");
+            print(invalidInput);
         }
 
         return input;
