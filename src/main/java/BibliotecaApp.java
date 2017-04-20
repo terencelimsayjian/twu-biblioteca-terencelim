@@ -6,51 +6,34 @@ public class BibliotecaApp {
     private static MainMenu mainMenu;
     private static BorrowBookMenu borrowBookMenu;
     private static ReturnBookMenu returnBookMenu;
+    private static MenuRouter menuRouter;
 
     public static void main(String[] args) {
-        init();
+        menuRouter = new MenuRouter();
+        boolean appRunning = true;
 
-        int mainMenuInput = 1;
-        while (mainMenuInput != EXIT_INPUT) {
-            print(mainMenu.getOptions());
-            mainMenuInput = getIntegerInput();
-            print(mainMenu.getResponse(mainMenuInput));
+        while (appRunning) {
+            print(menuRouter.getOptions());
+            int input = getIntegerInput();
+            print(menuRouter.getResponse(input));
 
-            if (mainMenuInput == 1) {
-                mainMenuOption1(borrowBookMenu);
-            } else if (mainMenuInput == 2) {
-                mainMenuOption2(returnBookMenu);
+            try {
+                menuRouter.getNextMenu();
+            } catch (Exception e) {
+                appRunning = false;
             }
 
         }
     }
 
-    private static void init() {
-        libraryBookDatabase = new LibraryBookDatabase();
-        mainMenu = new MainMenu();
-        borrowBookMenu = new BorrowBookMenu(libraryBookDatabase);
-        returnBookMenu = new ReturnBookMenu(libraryBookDatabase);
-
-        print(MainMenu.welcomeMessage);
-    }
-
-    private static void mainMenuOption2(ReturnBookMenu bookMenu) {
-        int returnBookInput = 1;
-        while (returnBookInput != EXIT_INPUT) {
-            print(bookMenu.getOptions());
-            returnBookInput = getIntegerInput();
-            print(bookMenu.getResponse(returnBookInput));
-        }
-    }
-
-    private static void mainMenuOption1(BorrowBookMenu borrowBookMenu) {
-        int bookMenuInput = 1;
-        while (bookMenuInput != EXIT_INPUT) {
-            print(borrowBookMenu.getOptions());
-            bookMenuInput = getIntegerInput();
-            print(borrowBookMenu.getResponse(bookMenuInput));
-        }
-    }
+//    private static void init() {
+//        libraryBookDatabase = new LibraryBookDatabase();
+//        mainMenu = new MainMenu();
+//        borrowBookMenu = new BorrowBookMenu(libraryBookDatabase);
+//        returnBookMenu = new ReturnBookMenu(libraryBookDatabase);
+//
+//        print(MainMenu.welcomeMessage);
+//    }
 
     private static void print(String str) {
         System.out.println(str);
@@ -62,7 +45,7 @@ public class BibliotecaApp {
             Scanner sc = new Scanner(System.in);
             input = sc.nextInt();
         } catch (Exception e) {
-            print("Please input a valid number!");
+            print("Invalid input. Please input a number!");
         }
 
         return input;
