@@ -1,15 +1,8 @@
 import java.util.Scanner;
 
 public class BibliotecaApp {
-    private static int EXIT_INPUT = 0;
-    private static LibraryBookDatabase libraryBookDatabase;
-    private static MainMenu mainMenu;
-    private static BorrowBookMenu borrowBookMenu;
-    private static ReturnBookMenu returnBookMenu;
-    private static MenuRouter menuRouter;
-
     public static void main(String[] args) {
-        menuRouter = new MenuRouter();
+        MenuRouter menuRouter = new MenuRouter();
         boolean appRunning = true;
 
         while (appRunning) {
@@ -25,15 +18,6 @@ public class BibliotecaApp {
 
         }
     }
-
-//    private static void init() {
-//        libraryBookDatabase = new LibraryBookDatabase();
-//        mainMenu = new MainMenu();
-//        borrowBookMenu = new BorrowBookMenu(libraryBookDatabase);
-//        returnBookMenu = new ReturnBookMenu(libraryBookDatabase);
-//
-//        print(MainMenu.welcomeMessage);
-//    }
 
     private static void print(String str) {
         System.out.println(str);

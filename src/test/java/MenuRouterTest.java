@@ -11,6 +11,5 @@ public class MenuRouterTest {
 
         when(mockMenu.getNextMenuId()).thenReturn(1);
 
-
     }
 }

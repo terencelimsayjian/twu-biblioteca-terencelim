@@ -14,8 +14,7 @@ public class MenuRouter {
         mainMenu = new MainMenu();
         borrowBookMenu = new BorrowBookMenu(libraryBookDatabase);
         returnBookMenu = new ReturnBookMenu(libraryBookDatabase);
-
-        this.currentMenu = mainMenu;
+        currentMenu = mainMenu;
     }
 
     public String getResponse(int userInput) {
