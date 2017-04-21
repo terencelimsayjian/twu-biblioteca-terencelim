@@ -1,22 +1,32 @@
 package menuprocessor;
 
-import database.LibraryBookDatabase;
+import database.LibraryLoanableDatabase;
+import model.Book;
+import model.Loanable;
+import tableStringFormatter.BookTableStringFormatter;
+
+import java.util.ArrayList;
 
 public class BorrowBookMenu implements Menu {
     public static String bookUnavailableMessage = "That book is not available";
     public static String bookCheckedOutMessage = "model.Book checked out. Enjoy your book!";
 
-    LibraryBookDatabase libraryBookDatabase;
+    LibraryLoanableDatabase libraryBookDatabase;
     MenuRouter menuRouter;
 
-    public BorrowBookMenu(LibraryBookDatabase libraryBookDatabase, MenuRouter menuRouter) {
+    public BorrowBookMenu(LibraryLoanableDatabase libraryBookDatabase, MenuRouter menuRouter) {
         this.libraryBookDatabase = libraryBookDatabase;
         this.menuRouter = menuRouter;
     }
 
     @Override
     public String getOptions() {
-        return libraryBookDatabase.availableBooksToString() + "\n" +
+        BookTableStringFormatter bookTableStringFormatter = new BookTableStringFormatter();
+        ArrayList<Loanable> availableLoanables = libraryBookDatabase.getAvailableLoanables();
+
+        String bookTable = bookTableStringFormatter.getTable(availableLoanables);
+
+        return bookTable + "\n" +
                 "Pick book to borrow" + "\n" +
                 "0: Exit this menu";
     }
@@ -24,7 +34,7 @@ public class BorrowBookMenu implements Menu {
     @Override
     public String getResponse(int bookMenuInput) {
         String menuMessage = "";
-        boolean succeededCheckout = libraryBookDatabase.checkoutBook(bookMenuInput);
+        boolean succeededCheckout = libraryBookDatabase.checkoutLoanable(bookMenuInput);
 
         if (succeededCheckout) {
             menuRouter.setCurrentMenu(MenuRouter.MAIN_MENU);

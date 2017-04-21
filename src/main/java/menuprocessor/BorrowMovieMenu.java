@@ -1,6 +1,6 @@
 package menuprocessor;
 
-import database.MockMovieDatabase;
+import database.StaticMovieData;
 import tableStringFormatter.MovieTableStringFormatter;
 
 public class BorrowMovieMenu implements Menu {
@@ -10,8 +10,8 @@ public class BorrowMovieMenu implements Menu {
     public BorrowMovieMenu(MenuRouter menuRouter) {
         this.menuRouter = menuRouter;
 
-        MockMovieDatabase mockMovieDatabase = new MockMovieDatabase();
-        movieTableStringFormatter = new MovieTableStringFormatter(mockMovieDatabase.getMovies());
+        StaticMovieData staticMovieData = new StaticMovieData();
+        movieTableStringFormatter = new MovieTableStringFormatter(staticMovieData.getMovies());
     }
 
     @Override

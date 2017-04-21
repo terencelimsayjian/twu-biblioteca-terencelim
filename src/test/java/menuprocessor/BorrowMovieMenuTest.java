@@ -1,6 +1,6 @@
 package menuprocessor;
 
-import database.LibraryBookDatabase;
+import database.LibraryLoanableDatabase;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 import static org.mockito.Mockito.mock;
 
 public class BorrowMovieMenuTest {
-    LibraryBookDatabase libraryBookDatabase;
+    LibraryLoanableDatabase libraryBookDatabase;
     MenuRouter menuRouter;
     BorrowMovieMenu borrowMovieMenu;
 

@@ -37,7 +37,7 @@ public class MovieTableStringFormatter extends TableStringFormatter {
     }
 
     public String buildName(Movie movie) {
-        return formatStringToFixedLength(movie.getName(), nameStringLength);
+        return formatStringToFixedLength(movie.getTitle(), nameStringLength);
     }
 
     public String buildYear(Movie movie) {

@@ -1,4 +1,4 @@
-import database.LibraryBookDatabase;
+import database.LibraryLoanableDatabase;
 import menuprocessor.BorrowBookMenu;
 import menuprocessor.MenuRouter;
 import org.junit.Before;
@@ -8,13 +8,13 @@ import static org.junit.Assert.*;
 import static org.mockito.Mockito.mock;
 
 public class BorrowBookMenuTest {
-    LibraryBookDatabase libraryBookDatabase;
+    LibraryLoanableDatabase libraryBookDatabase;
     MenuRouter menuRouter;
     BorrowBookMenu borrowBookMenu;
 
     @Before
     public void setUp() throws Exception {
-        libraryBookDatabase = mock(LibraryBookDatabase.class);
+        libraryBookDatabase = mock(LibraryLoanableDatabase.class);
         menuRouter = mock(MenuRouter.class);
         borrowBookMenu = new BorrowBookMenu(libraryBookDatabase, menuRouter);
     }

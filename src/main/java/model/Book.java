@@ -1,6 +1,6 @@
 package model;
 
-public class Book {
+public class Book implements Loanable {
     private int id;
     private String title;
     private String author;

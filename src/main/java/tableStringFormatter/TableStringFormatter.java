@@ -1,5 +1,7 @@
 package tableStringFormatter;
 
+import java.util.ArrayList;
+
 public abstract class TableStringFormatter {
     public String divider = " | ";
     public int totalStringLength;
@@ -34,8 +36,5 @@ public abstract class TableStringFormatter {
         return subject;
     }
 
-    public abstract String getTable();
-
-    public abstract String buildHeader();
 
 }

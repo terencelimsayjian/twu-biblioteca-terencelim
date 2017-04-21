@@ -5,10 +5,10 @@ import model.Book;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MockBookDatabase {
+public class StaticBookData {
     ArrayList<Book> books = new ArrayList<>();
 
-    public MockBookDatabase() {
+    public StaticBookData() {
         Book book1 = new Book(1,  "Harry Potter", "J.K. Rowling", 2003);
         Book book2 = new Book(2,  "Lord Of The Rings", "J.R.R Tolkein", 1978);
         Book book3 = new Book(3, "The Magicians", "Lev Grossman", 2006);

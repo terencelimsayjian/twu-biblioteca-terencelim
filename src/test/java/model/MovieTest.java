@@ -20,7 +20,7 @@ public class MovieTest {
 
     @Test
     public void testGetTitle() throws Exception {
-        assertEquals(movie.getName(), "Inception");
+        assertEquals(movie.getTitle(), "Inception");
     }
 
     @Test

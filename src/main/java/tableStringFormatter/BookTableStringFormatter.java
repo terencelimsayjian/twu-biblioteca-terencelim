@@ -1,6 +1,7 @@
 package tableStringFormatter;
 
 import model.Book;
+import model.Loanable;
 
 import java.util.ArrayList;
 
@@ -10,14 +11,10 @@ public class BookTableStringFormatter extends TableStringFormatter {
     public int authorStringLength = 20;
     public int yearPublishedStringLength = 14;
 
-    ArrayList<Book> bookList;
-
-    public BookTableStringFormatter(ArrayList<Book> bookList) {
+    public BookTableStringFormatter() {
         totalStringLength = idStringLength + divider.length() +
                 titleStringLength + divider.length() +
                 authorStringLength + divider.length() + yearPublishedStringLength;
-
-        this.bookList = bookList;
     }
 
     public String build(Book book) {
@@ -64,14 +61,16 @@ public class BookTableStringFormatter extends TableStringFormatter {
         return headerString;
     }
 
-    public String getTable() {
+    public String getTable(ArrayList<Loanable> bookList) {
+
+
         String bookTable = "";
 
         bookTable = bookTable + buildHeader() + "\n";
         bookTable = bookTable  + buildDivider() + "\n";
 
-        for (Book book : bookList) {
-            bookTable = bookTable + build(book) + "\n";
+        for (Loanable book : bookList) {
+            bookTable = bookTable + build((Book)book) + "\n";
         }
 
         bookTable = bookTable + buildDivider();

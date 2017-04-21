@@ -1,16 +1,15 @@
 package model;
 
-public class Movie {
+public class Movie implements Loanable {
     private int id;
-    private String name;
+    private String title;
     private String year;
     private String director;
     private int movieRating;
 
-
-    public Movie(int id, String name, String year, String director, int movieRating) {
+    public Movie(int id, String title, String year, String director, int movieRating) {
         this.id = id;
-        this.name = name;
+        this.title = title;
         this.year = year;
         this.director = director;
         this.movieRating = movieRating;
@@ -20,8 +19,8 @@ public class Movie {
         return id;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
     public String getYear() {
@@ -47,6 +46,6 @@ public class Movie {
     }
 
     public String toString() {
-        return id + " | " + name + " | " + year + " | " + director + " | " + getMovieRatingString();
+        return id + " | " + title + " | " + year + " | " + director + " | " + getMovieRatingString();
     }
 }

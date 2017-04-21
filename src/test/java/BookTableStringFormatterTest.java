@@ -1,4 +1,4 @@
-import database.MockBookDatabase;
+import database.StaticBookData;
 import tableStringFormatter.BookTableStringFormatter;
 import model.Book;
 import org.junit.Before;
@@ -17,9 +17,9 @@ public class BookTableStringFormatterTest {
 
     @Before
     public void setUp() {
-        MockBookDatabase mockBookDatabase = new MockBookDatabase();
+        StaticBookData staticBookData = new StaticBookData();
 
-        bookTableStringFormatter = new BookTableStringFormatter(mockBookDatabase.getBooks());
+        bookTableStringFormatter = new BookTableStringFormatter();
         desiredIdStringLength = bookTableStringFormatter.idStringLength;
         desiredTitleStringLength = bookTableStringFormatter.titleStringLength;
         desiredAuthorStringLength = bookTableStringFormatter.authorStringLength;
