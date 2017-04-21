@@ -25,14 +25,21 @@ public class MainMenuTest {
     @Test
     public void testListBorrowedBooksResponse() {
         String menuResponse = "";
-            menuResponse = mainMenu.getResponse(mainMenu.OPTION_2_LIST_BORROWED_BOOKS);
+            menuResponse = mainMenu.getResponse(mainMenu.OPTION_3_LIST_BORROWED_BOOKS);
             assertEquals(menuResponse, mainMenu.booksOnLoanMessage);
+    }
+
+    @Test
+    public void testListAvailableMoviesResponse() {
+        String menuResponse = "";
+            menuResponse = mainMenu.getResponse(mainMenu.OPTION_2_LIST_AVAILABLE_MOVIES);
+            assertEquals(menuResponse, mainMenu.availableMovieMessage);
     }
 
     @Test
     public void testMainMenuExitResponse() {
         String menuResponse = "";
-            menuResponse = mainMenu.getResponse(mainMenu.OPTION_3_EXIT_APPLICATION);
+            menuResponse = mainMenu.getResponse(mainMenu.OPTION_0_EXIT_APPLICATION);
             assertEquals(menuResponse, mainMenu.exitMessage);
     }
 

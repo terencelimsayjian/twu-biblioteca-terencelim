@@ -32,7 +32,7 @@ public class MockBookDatabase {
         books.add(book10);
     }
 
-    public List<Book> getBooks() {
+    public ArrayList<Book> getBooks() {
         return books;
     }
 }

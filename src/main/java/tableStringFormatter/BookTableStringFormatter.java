@@ -1,19 +1,23 @@
-package helper;
+package tableStringFormatter;
 
 import model.Book;
 
-public class BookStringBuilder {
+import java.util.ArrayList;
+
+public class BookTableStringFormatter extends TableStringFormatter {
     public int idStringLength = 3;
     public int titleStringLength = 40;
     public int authorStringLength = 20;
     public int yearPublishedStringLength = 14;
-    public String divider = " | ";
-    public int totalStringLength;
 
-    public BookStringBuilder() {
+    ArrayList<Book> bookList;
+
+    public BookTableStringFormatter(ArrayList<Book> bookList) {
         totalStringLength = idStringLength + divider.length() +
                 titleStringLength + divider.length() +
                 authorStringLength + divider.length() + yearPublishedStringLength;
+
+        this.bookList = bookList;
     }
 
     public String build(Book book) {
@@ -38,7 +42,7 @@ public class BookStringBuilder {
 
     public String buildYearPublished(Book book) {
         String yearPublishedString = Integer.toString(book.getYearPublished());
-        return appendSpaces(yearPublishedString, yearPublishedStringLength);
+        return formatStringToFixedLength(yearPublishedString, yearPublishedStringLength);
     }
 
     public String buildHeader() {
@@ -60,33 +64,19 @@ public class BookStringBuilder {
         return headerString;
     }
 
-    public String buildDivider() {
-        String dividerString = "";
+    public String getTable() {
+        String bookTable = "";
 
-        for (int i = 0; i < totalStringLength; i++) {
-            dividerString += "-";
+        bookTable = bookTable + buildHeader() + "\n";
+        bookTable = bookTable  + buildDivider() + "\n";
+
+        for (Book book : bookList) {
+            bookTable = bookTable + build(book) + "\n";
         }
 
-        return dividerString;
+        bookTable = bookTable + buildDivider();
+
+        return bookTable;
     }
 
-    private String formatStringToFixedLength(String subject, int desiredTitleStringLength) {
-        String titleString;
-
-        if (subject.length() > desiredTitleStringLength) {
-            titleString = subject.substring(0, desiredTitleStringLength - 3) + "...";
-        } else {
-            titleString = appendSpaces(subject, desiredTitleStringLength);
-        }
-        return titleString;
-    }
-
-    private String appendSpaces(String subject, int desiredTitleStringLength) {
-        int remainingSpaces = desiredTitleStringLength - subject.length();
-
-        for (int i = 0; i < remainingSpaces; i++) {
-            subject = subject + " ";
-        }
-        return subject;
-    }
 }

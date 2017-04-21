@@ -1,6 +1,6 @@
 package database;
 
-import helper.BookStringBuilder;
+import tableStringFormatter.BookTableStringFormatter;
 import model.Book;
 
 import java.util.ArrayList;
@@ -52,19 +52,9 @@ public class LibraryBookDatabase {
     }
 
     private String toTable(ArrayList<Book> bookList) {
-        BookStringBuilder bookStringBuilder = new BookStringBuilder();
-        String bookTable = "";
+        BookTableStringFormatter bookTableStringFormatter = new BookTableStringFormatter(bookList);
 
-        bookTable = bookTable + bookStringBuilder.buildHeader() + "\n";
-        bookTable = bookTable  + bookStringBuilder.buildDivider() + "\n";
-
-        for (Book book : bookList) {
-            bookTable = bookTable + bookStringBuilder.build(book) + "\n";
-        }
-
-        bookTable = bookTable + bookStringBuilder.buildDivider();
-
-        return bookTable;
+        return bookTableStringFormatter.getTable();
     }
 
     public String availableBooksToString() {

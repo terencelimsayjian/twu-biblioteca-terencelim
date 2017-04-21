@@ -33,7 +33,7 @@ public class MockMovieDatabase {
         movies.add(movie10);
     }
 
-    public List<Movie> getBooks() {
+    public ArrayList<Movie> getMovies() {
         return movies;
     }
 }

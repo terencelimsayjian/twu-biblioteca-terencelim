@@ -1,12 +1,13 @@
-import helper.BookStringBuilder;
+import database.MockBookDatabase;
+import tableStringFormatter.BookTableStringFormatter;
 import model.Book;
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class BookStringBuilderTest {
-    BookStringBuilder bookStringBuilder;
+public class BookTableStringFormatterTest {
+    BookTableStringFormatter bookTableStringFormatter;
     int desiredIdStringLength;
     int desiredTitleStringLength;
     int desiredAuthorStringLength;
@@ -16,33 +17,35 @@ public class BookStringBuilderTest {
 
     @Before
     public void setUp() {
-        bookStringBuilder = new BookStringBuilder();
-        desiredIdStringLength = bookStringBuilder.idStringLength;
-        desiredTitleStringLength = bookStringBuilder.titleStringLength;
-        desiredAuthorStringLength = bookStringBuilder.authorStringLength;
-        desiredYearPublishedStringLength = bookStringBuilder.yearPublishedStringLength;
-        divider = bookStringBuilder.divider;
-        totalStringLength = bookStringBuilder.totalStringLength;
+        MockBookDatabase mockBookDatabase = new MockBookDatabase();
+
+        bookTableStringFormatter = new BookTableStringFormatter(mockBookDatabase.getBooks());
+        desiredIdStringLength = bookTableStringFormatter.idStringLength;
+        desiredTitleStringLength = bookTableStringFormatter.titleStringLength;
+        desiredAuthorStringLength = bookTableStringFormatter.authorStringLength;
+        desiredYearPublishedStringLength = bookTableStringFormatter.yearPublishedStringLength;
+        divider = bookTableStringFormatter.divider;
+        totalStringLength = bookTableStringFormatter.totalStringLength;
     }
 
     @Test
     public void testIdStringBuilder() {
         Book americanGods = new Book(1, "American Gods", "Neil Gaiman", 2008);
-        String americanGodsIdString = bookStringBuilder.buildId(americanGods);
+        String americanGodsIdString = bookTableStringFormatter.buildId(americanGods);
         assertEquals(americanGodsIdString.length(), desiredIdStringLength);
     }
 
     @Test
     public void testTitleStringBuilder() {
         Book americanGods = new Book(1, "American Gods", "Neil Gaiman", 2008);
-        String americanGodsTitleString = bookStringBuilder.buildTitle(americanGods);
+        String americanGodsTitleString = bookTableStringFormatter.buildTitle(americanGods);
         assertEquals(americanGodsTitleString.length(), desiredTitleStringLength);
     }
 
     @Test
     public void testLongTitleToString() {
         Book harryPotter = new Book(1, "Harry Potter and the Goblet of Gooey Fire", "J.K. Rowling", 2003);
-        String harryPotterTitleString = bookStringBuilder.buildTitle(harryPotter);
+        String harryPotterTitleString = bookTableStringFormatter.buildTitle(harryPotter);
         assertEquals(harryPotterTitleString.length(), desiredTitleStringLength);
         assertEquals(harryPotterTitleString, "Harry Potter and the Goblet of Gooey ...");
     }
@@ -50,7 +53,7 @@ public class BookStringBuilderTest {
     @Test
     public void testAuthorToString() {
         Book americanGods = new Book(1, "American Gods", "Neil Gaiman Bartholomew", 2008);
-        String americanGodsAuthorString = bookStringBuilder.buildAuthor(americanGods);
+        String americanGodsAuthorString = bookTableStringFormatter.buildAuthor(americanGods);
         assertEquals(americanGodsAuthorString.length(), desiredAuthorStringLength);
         assertEquals(americanGodsAuthorString, "Neil Gaiman Barth...");
     }
@@ -58,7 +61,7 @@ public class BookStringBuilderTest {
     @Test
     public void testYearPublishedToString() {
         Book americanGods = new Book(1, "American Gods", "Neil Gaiman Bartholomew", 2008);
-        String americanGodsYearPublishedString = bookStringBuilder.buildYearPublished(americanGods);
+        String americanGodsYearPublishedString = bookTableStringFormatter.buildYearPublished(americanGods);
         assertEquals(americanGodsYearPublishedString.length(), desiredYearPublishedStringLength);
 
         String yearPublished = "2008";
@@ -74,18 +77,18 @@ public class BookStringBuilderTest {
     @Test
     public void testBookToString() {
         Book americanGods = new Book(1, "American Gods", "Neil Gaiman Bartholomew", 2008);
-        String americanGodsString = bookStringBuilder.build(americanGods);
+        String americanGodsString = bookTableStringFormatter.build(americanGods);
 
         assertEquals(americanGodsString.length(), totalStringLength);
     }
 
     @Test
     public void testHeader() {
-        assertEquals(bookStringBuilder.buildHeader().length(), totalStringLength);
+        assertEquals(bookTableStringFormatter.buildHeader().length(), totalStringLength);
     }
 
     @Test
     public void testDivider() {
-        assertEquals(bookStringBuilder.buildDivider().length(), totalStringLength);
+        assertEquals(bookTableStringFormatter.buildDivider().length(), totalStringLength);
     }
 }

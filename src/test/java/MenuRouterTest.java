@@ -30,4 +30,10 @@ public class MenuRouterTest {
         menuRouter.setCurrentMenu(MenuRouter.RETURN_BOOK_MENU);
         assertEquals(menuRouter.getCurrentMenu() instanceof ReturnBookMenu, true);
     }
+
+    @Test
+    public void testBorrowMovieMenu() throws Exception {
+        menuRouter.setCurrentMenu(MenuRouter.BORROW_MOVIE_MENU);
+        assertEquals(menuRouter.getCurrentMenu() instanceof BorrowMovieMenu, true);
+    }
 }
