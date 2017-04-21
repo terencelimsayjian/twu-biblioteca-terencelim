@@ -31,7 +31,6 @@ public class BorrowBookMenu implements Menu {
             menuMessage = bookCheckedOutMessage;
         } else if (bookMenuInput == MenuRouter.EXIT) {
             menuRouter.setCurrentMenu(MenuRouter.MAIN_MENU);
-            menuMessage = "";
         } else if (!succeededCheckout) {
             menuRouter.setCurrentMenu(MenuRouter.BORROW_BOOK_MENU);
             menuMessage = bookUnavailableMessage;
