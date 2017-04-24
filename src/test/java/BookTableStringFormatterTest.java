@@ -23,7 +23,7 @@ public class BookTableStringFormatterTest {
         desiredIdStringLength = bookTableStringFormatter.idStringLength;
         desiredTitleStringLength = bookTableStringFormatter.titleStringLength;
         desiredAuthorStringLength = bookTableStringFormatter.authorStringLength;
-        desiredYearPublishedStringLength = bookTableStringFormatter.yearPublishedStringLength;
+        desiredYearPublishedStringLength = bookTableStringFormatter.yearStringLength;
         divider = bookTableStringFormatter.divider;
         totalStringLength = bookTableStringFormatter.totalStringLength;
     }
@@ -61,7 +61,7 @@ public class BookTableStringFormatterTest {
     @Test
     public void testYearPublishedToString() {
         Book americanGods = new Book(1, "American Gods", "Neil Gaiman Bartholomew", 2008);
-        String americanGodsYearPublishedString = bookTableStringFormatter.buildYearPublished(americanGods);
+        String americanGodsYearPublishedString = bookTableStringFormatter.buildYear(americanGods);
         assertEquals(americanGodsYearPublishedString.length(), desiredYearPublishedStringLength);
 
         String yearPublished = "2008";

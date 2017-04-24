@@ -1,7 +1,6 @@
 package menuprocessor;
 
-import database.LibraryLoanableDatabase;
-import database.StaticBookData;
+import database.*;
 
 public class MenuRouter {
     public static int EXIT = 0;
@@ -22,10 +21,13 @@ public class MenuRouter {
         StaticBookData staticBookData = new StaticBookData();
         LibraryLoanableDatabase libraryBookDatabase = new LibraryLoanableDatabase(staticBookData.getBooks());
 
+        StaticMovieData staticMovieData = new StaticMovieData();
+        LibraryLoanableDatabase libraryMovieDatabase = new LibraryLoanableDatabase(staticMovieData.getMovies());
+
         mainMenu = new MainMenu(this);
         borrowBookMenu = new BorrowBookMenu(libraryBookDatabase, this);
         returnBookMenu = new ReturnBookMenu(libraryBookDatabase, this);
-        borrowMovieMenu = new BorrowMovieMenu(this);
+        borrowMovieMenu = new BorrowMovieMenu(libraryMovieDatabase, this);
 
         currentMenu = mainMenu;
         appRunning = true;

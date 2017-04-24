@@ -21,14 +21,23 @@ public class BorrowBookMenu implements Menu {
 
     @Override
     public String getOptions() {
-        BookTableStringFormatter bookTableStringFormatter = new BookTableStringFormatter();
-        ArrayList<Loanable> availableLoanables = libraryBookDatabase.getAvailableLoanables();
-
-        String bookTable = bookTableStringFormatter.getTable(availableLoanables);
+        String bookTable = getBookTable();
 
         return bookTable + "\n" +
                 "Pick book to borrow" + "\n" +
                 "0: Exit this menu";
+    }
+
+    private String getBookTable() {
+        ArrayList<Loanable> availableLoanables = libraryBookDatabase.getAvailableLoanables();
+
+        ArrayList<Book> bookList = new ArrayList<>();
+        for (Loanable loanable : availableLoanables) {
+            bookList.add((Book) loanable);
+        }
+
+        BookTableStringFormatter bookTableStringFormatter = new BookTableStringFormatter();
+        return bookTableStringFormatter.getTable(bookList);
     }
 
     @Override

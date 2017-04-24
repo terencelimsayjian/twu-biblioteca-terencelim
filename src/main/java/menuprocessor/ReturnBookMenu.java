@@ -1,6 +1,11 @@
 package menuprocessor;
 
 import database.LibraryLoanableDatabase;
+import model.Book;
+import model.Loanable;
+import tableStringFormatter.BookTableStringFormatter;
+
+import java.util.ArrayList;
 
 public class ReturnBookMenu implements Menu {
     public static String invalidReturnBookMessage = "Not a valid book to return!";
@@ -16,9 +21,23 @@ public class ReturnBookMenu implements Menu {
 
     @Override
     public String getOptions() {
-        return libraryBookDatabase.loanablesOnLoanToString() + "\n" +
+        String bookTable = getBookTable();
+
+        return bookTable + "\n" +
                 "Pick book to return" + "\n" +
                 "0: Exit this menu";
+    }
+
+    private String getBookTable() {
+        ArrayList<Loanable> loanablesOnLoan = libraryBookDatabase.getLoanablesOnLoan();
+
+        ArrayList<Book> bookList = new ArrayList<>();
+        for (Loanable loanable : loanablesOnLoan) {
+            bookList.add((Book) loanable);
+        }
+
+        BookTableStringFormatter bookTableStringFormatter = new BookTableStringFormatter();
+        return bookTableStringFormatter.getTable(bookList);
     }
 
     @Override

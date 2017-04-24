@@ -9,19 +9,19 @@ public class BookTableStringFormatter extends TableStringFormatter {
     public int idStringLength = 3;
     public int titleStringLength = 40;
     public int authorStringLength = 20;
-    public int yearPublishedStringLength = 14;
+    public int yearStringLength = 5;
 
     public BookTableStringFormatter() {
         totalStringLength = idStringLength + divider.length() +
                 titleStringLength + divider.length() +
-                authorStringLength + divider.length() + yearPublishedStringLength;
+                authorStringLength + divider.length() + yearStringLength;
     }
 
     public String build(Book book) {
         return buildId(book) + divider +
                 buildTitle(book) + divider +
                 buildAuthor(book) + divider +
-                buildYearPublished(book);
+                buildYear(book);
     }
 
     public String buildId(Book book) {
@@ -37,9 +37,9 @@ public class BookTableStringFormatter extends TableStringFormatter {
         return formatStringToFixedLength(book.getAuthor(), authorStringLength);
     }
 
-    public String buildYearPublished(Book book) {
+    public String buildYear(Book book) {
         String yearPublishedString = Integer.toString(book.getYearPublished());
-        return formatStringToFixedLength(yearPublishedString, yearPublishedStringLength);
+        return formatStringToFixedLength(yearPublishedString, yearStringLength);
     }
 
     public String buildHeader() {
@@ -52,25 +52,28 @@ public class BookTableStringFormatter extends TableStringFormatter {
         String authorHeaderString = "Author";
         authorHeaderString = formatStringToFixedLength(authorHeaderString, authorStringLength);
 
-        String yearPublishedHeaderString = "Year Published";
+        String yearHeaderString = "Year";
+        yearHeaderString = formatStringToFixedLength(yearHeaderString, yearStringLength);
+
         String headerString = idHeaderString + divider +
                 titleHeaderString + divider
                 + authorHeaderString + divider
-                + yearPublishedHeaderString;
+                + yearHeaderString;
 
         return headerString;
     }
 
-    public String getTable(ArrayList<Loanable> bookList) {
-
-
+    public String getTable(ArrayList<Book> bookList) {
         String bookTable = "";
 
         bookTable = bookTable + buildHeader() + "\n";
         bookTable = bookTable  + buildDivider() + "\n";
 
-        for (Loanable book : bookList) {
-            bookTable = bookTable + build((Book)book) + "\n";
+//        for (Loanable book : bookList) {
+//            bookTable = bookTable + build((Book)book) + "\n";
+//        }
+        for (Book book : bookList) {
+            bookTable = bookTable + build(book) + "\n";
         }
 
         bookTable = bookTable + buildDivider();

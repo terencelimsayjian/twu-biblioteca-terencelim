@@ -8,15 +8,15 @@ import static org.junit.Assert.*;
 import static org.mockito.Mockito.mock;
 
 public class BorrowMovieMenuTest {
-    LibraryLoanableDatabase libraryBookDatabase;
+    LibraryLoanableDatabase libraryMovieDatabase;
     MenuRouter menuRouter;
     BorrowMovieMenu borrowMovieMenu;
 
     @Before
     public void setUp() throws Exception {
-//        libraryBookDatabase = mock(LibraryBookDatabase.class);
+        libraryMovieDatabase = mock(LibraryLoanableDatabase.class);
         menuRouter = new MenuRouter();
-        borrowMovieMenu = new BorrowMovieMenu(menuRouter);
+        borrowMovieMenu = new BorrowMovieMenu(libraryMovieDatabase, menuRouter);
     }
 
     @Test

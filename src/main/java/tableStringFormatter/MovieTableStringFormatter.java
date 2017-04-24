@@ -11,16 +11,12 @@ public class MovieTableStringFormatter extends TableStringFormatter {
     public int directorStringLength = 25;
     public int movieRatingStringLength = 7;
 
-    ArrayList<Movie> movieList;
-
-    public MovieTableStringFormatter(ArrayList<Movie> movieList) {
+    public MovieTableStringFormatter() {
         totalStringLength = idStringLength + divider.length() +
                 nameStringLength + divider.length() +
                 yearStringLength + divider.length() +
                 directorStringLength + divider.length() +
                 movieRatingStringLength;
-
-        this.movieList = movieList;
     }
 
     public String build(Movie movie) {
@@ -77,7 +73,7 @@ public class MovieTableStringFormatter extends TableStringFormatter {
         return headerString;
     }
 
-    public String getTable() {
+    public String getTable(ArrayList<Movie> movieList) {
         String movieTable = "";
 
         movieTable = movieTable + buildHeader() + "\n";

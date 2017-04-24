@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="menuprocessor.BorrowMovieMenuTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-04-24T02:51:03" hostname="sg-6.local" time="0.0">
+  <properties/>
+  <testcase name="testBorrowBook" classname="menuprocessor.BorrowMovieMenuTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

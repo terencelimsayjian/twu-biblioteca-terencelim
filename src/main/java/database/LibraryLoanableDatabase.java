@@ -4,6 +4,7 @@ import model.Loanable;
 import model.Loanable;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class LibraryLoanableDatabase {
     ArrayList<Loanable> availableLoanables = new ArrayList<>();
@@ -50,15 +51,4 @@ public class LibraryLoanableDatabase {
         return succeedReturn;
     }
 
-    private String toTable(ArrayList<Loanable> loanableList) {
-        return loanableList.toString();
-    }
-
-    public String availableLoanablesToString() {
-        return toTable(availableLoanables);
-    }
-
-    public String loanablesOnLoanToString() {
-        return toTable(loanablesOnLoan);
-    }
 }
