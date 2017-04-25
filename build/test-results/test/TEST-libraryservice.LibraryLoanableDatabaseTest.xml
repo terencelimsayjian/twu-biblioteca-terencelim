@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="libraryservice.LibraryLoanableDatabaseTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-04-25T03:34:31" hostname="sg-6.local" time="0.001">
+  <properties/>
+  <testcase name="testCheckout" classname="libraryservice.LibraryLoanableDatabaseTest" time="0.001"/>
+  <testcase name="testGetAvailableLoanables" classname="libraryservice.LibraryLoanableDatabaseTest" time="0.0"/>
+  <testcase name="testCheckoutSameLoanableTwice" classname="libraryservice.LibraryLoanableDatabaseTest" time="0.0"/>
+  <testcase name="testReturnSameLoanableTwice" classname="libraryservice.LibraryLoanableDatabaseTest" time="0.0"/>
+  <testcase name="testReturn" classname="libraryservice.LibraryLoanableDatabaseTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

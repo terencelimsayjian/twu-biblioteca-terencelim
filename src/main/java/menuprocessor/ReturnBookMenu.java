@@ -1,9 +1,9 @@
 package menuprocessor;
 
-import database.LibraryLoanableDatabase;
+import libraryservice.LibraryLoanableDatabase;
 import model.Book;
 import model.Loanable;
-import tableStringFormatter.BookTableStringFormatter;
+import tablestringformatter.BookTableStringFormatter;
 
 import java.util.ArrayList;
 

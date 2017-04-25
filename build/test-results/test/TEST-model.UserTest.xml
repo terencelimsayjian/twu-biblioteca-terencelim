@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="model.UserTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-04-25T03:34:31" hostname="sg-6.local" time="0.001">
+  <properties/>
+  <testcase name="testUserValidation" classname="model.UserTest" time="0.0"/>
+  <testcase name="testGetters" classname="model.UserTest" time="0.0"/>
+  <testcase name="testWrongLibraryId" classname="model.UserTest" time="0.001"/>
+  <testcase name="testWrongPassword" classname="model.UserTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

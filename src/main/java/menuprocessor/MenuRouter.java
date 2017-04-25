@@ -1,6 +1,6 @@
 package menuprocessor;
 
-import database.*;
+import libraryservice.*;
 
 public class MenuRouter {
     public static int EXIT = 0;
@@ -9,6 +9,7 @@ public class MenuRouter {
     public static int RETURN_BOOK_MENU = 3;
     public static int BORROW_MOVIE_MENU = 4;
     public static int RETURN_MOVIE_MENU = 5;
+    public static int LOGIN_MENU = 6;
 
     Menu currentMenu;
     Menu mainMenu;
@@ -16,6 +17,7 @@ public class MenuRouter {
     Menu returnBookMenu;
     Menu borrowMovieMenu;
     Menu returnMovieMenu;
+    Menu loginMenu;
     public boolean appRunning = true;
 
     public MenuRouter() {
@@ -31,6 +33,7 @@ public class MenuRouter {
         returnBookMenu = new ReturnBookMenu(libraryBookDatabase, this);
         borrowMovieMenu = new BorrowMovieMenu(libraryMovieDatabase, this);
         returnMovieMenu = new ReturnMovieMenu(libraryMovieDatabase, this);
+        loginMenu = new LoginMenu(this);
 
         currentMenu = mainMenu;
     }
@@ -58,6 +61,8 @@ public class MenuRouter {
             currentMenu = borrowMovieMenu;
         } else if (menuIndex == RETURN_MOVIE_MENU) {
             currentMenu = returnMovieMenu;
+        } else if (menuIndex == LOGIN_MENU) {
+            currentMenu = loginMenu;
         } else {
             quitApp();
         }

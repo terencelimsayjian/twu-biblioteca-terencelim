@@ -5,6 +5,7 @@ public class MainMenu implements Menu {
     public int OPTION_2_LIST_AVAILABLE_MOVIES = 2;
     public int OPTION_3_LIST_BORROWED_BOOKS = 3;
     public int OPTION_4_LIST_BORROWED_MOVIES = 4;
+    public int OPTION_5_LOGIN = 5;
     public int OPTION_0_EXIT_APPLICATION = 0;
 
     public String exitMessage = "Hope to see you again!";
@@ -13,6 +14,7 @@ public class MainMenu implements Menu {
     public String availableMovieMessage = "List of available movies:";
     public String booksOnLoanMessage = "List of borrowed books:";
     public String moviesOnLoanMessage = "List of borrowed movies:";
+    public String loginMessage = "Enter your credentials:";
 
     MenuRouter menuRouter;
 
@@ -27,6 +29,7 @@ public class MainMenu implements Menu {
                 "2. Available Movies\n" +
                 "3. Borrowed Books\n" +
                 "4. Borrowed Movies\n" +
+                "5. Login\n" +
                 "0. Exit Application";
     }
 
@@ -46,6 +49,9 @@ public class MainMenu implements Menu {
         } else if (mainMenuInput == OPTION_4_LIST_BORROWED_MOVIES) {
             menuRouter.setCurrentMenu(MenuRouter.RETURN_MOVIE_MENU);
             menuMessage = moviesOnLoanMessage;
+        } else if (mainMenuInput == OPTION_5_LOGIN) {
+            menuRouter.setCurrentMenu(MenuRouter.LOGIN_MENU);
+            menuMessage = loginMessage;
         } else if (mainMenuInput == OPTION_0_EXIT_APPLICATION) {
             menuRouter.setCurrentMenu(0);
             menuMessage = exitMessage;

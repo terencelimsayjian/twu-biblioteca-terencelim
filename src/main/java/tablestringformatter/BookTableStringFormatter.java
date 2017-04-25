@@ -1,7 +1,6 @@
-package tableStringFormatter;
+package tablestringformatter;
 
 import model.Book;
-import model.Loanable;
 
 import java.util.ArrayList;
 

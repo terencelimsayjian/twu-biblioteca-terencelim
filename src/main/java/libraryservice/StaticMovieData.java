@@ -1,10 +1,8 @@
-package database;
+package libraryservice;
 
-import model.Book;
 import model.Movie;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class StaticMovieData {
     ArrayList<Movie> movies = new ArrayList<>();

@@ -1,9 +1,8 @@
-package database;
+package libraryservice;
 
 import model.Book;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class StaticBookData {
     ArrayList<Book> books = new ArrayList<>();

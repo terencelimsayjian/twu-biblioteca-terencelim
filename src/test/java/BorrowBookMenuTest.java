@@ -1,4 +1,4 @@
-import database.LibraryLoanableDatabase;
+import libraryservice.LibraryLoanableDatabase;
 import menuprocessor.BorrowBookMenu;
 import menuprocessor.MenuRouter;
 import org.junit.Before;

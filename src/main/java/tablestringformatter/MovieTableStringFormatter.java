@@ -1,4 +1,4 @@
-package tableStringFormatter;
+package tablestringformatter;
 
 import model.Movie;
 

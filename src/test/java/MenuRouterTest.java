@@ -42,4 +42,10 @@ public class MenuRouterTest {
         menuRouter.setCurrentMenu(MenuRouter.RETURN_MOVIE_MENU);
         assertEquals(menuRouter.getCurrentMenu() instanceof ReturnMovieMenu, true);
     }
+
+    @Test
+    public void testLoginMenu() throws Exception {
+        menuRouter.setCurrentMenu(MenuRouter.LOGIN_MENU);
+        assertEquals(menuRouter.getCurrentMenu() instanceof LoginMenu, true);
+    }
 }

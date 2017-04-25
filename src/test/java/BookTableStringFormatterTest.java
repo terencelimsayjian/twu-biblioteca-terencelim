@@ -1,5 +1,5 @@
-import database.StaticBookData;
-import tableStringFormatter.BookTableStringFormatter;
+import libraryservice.StaticBookData;
+import tablestringformatter.BookTableStringFormatter;
 import model.Book;
 import org.junit.Before;
 import org.junit.Test;

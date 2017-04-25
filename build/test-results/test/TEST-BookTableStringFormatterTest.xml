@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="BookTableStringFormatterTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-04-24T06:48:29" hostname="sg-6.local" time="0.004">
+<testsuite name="BookTableStringFormatterTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-04-25T03:34:31" hostname="sg-6.local" time="0.003">
   <properties/>
-  <testcase name="testAuthorToString" classname="BookTableStringFormatterTest" time="0.002"/>
+  <testcase name="testAuthorToString" classname="BookTableStringFormatterTest" time="0.001"/>
   <testcase name="testLongTitleToString" classname="BookTableStringFormatterTest" time="0.0"/>
-  <testcase name="testBookToString" classname="BookTableStringFormatterTest" time="0.001"/>
+  <testcase name="testBookToString" classname="BookTableStringFormatterTest" time="0.0"/>
   <testcase name="testTitleStringBuilder" classname="BookTableStringFormatterTest" time="0.0"/>
   <testcase name="testDivider" classname="BookTableStringFormatterTest" time="0.0"/>
   <testcase name="testIdStringBuilder" classname="BookTableStringFormatterTest" time="0.0"/>

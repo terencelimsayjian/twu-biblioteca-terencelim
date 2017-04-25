@@ -2,53 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e29b113-f55f-469a-8d04-69cc0bc36e87" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/menuprocessor/BorrowLoanableMenu.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/menuprocessor/ReturnLoanableMenu.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/menuprocessor/ReturnMovieMenu.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/database/LibraryLoanableDatabaseTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/menuprocessor/BorrowLoanableMenuTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/test/menuprocessor/BorrowMovieMenuTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/menuprocessor/BorrowMovieMenuTest.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/menuprocessor/LoginMenu.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/userauthentication/StaticUserData.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/userauthentication/UserAuthenticator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/menuprocessor/LoginMenuTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/model/UserTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/userauthentication/UserAuthenticatorTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/database/LibraryLoanableDatabase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/database/StaticBookData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/database/StaticMovieData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/test/database/LibraryLoanableDatabaseTest.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/database/LibraryLoanableDatabase.java" afterPath="$PROJECT_DIR$/src/main/java/libraryservice/LibraryLoanableDatabase.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/database/StaticBookData.java" afterPath="$PROJECT_DIR$/src/main/java/libraryservice/StaticBookData.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/database/StaticMovieData.java" afterPath="$PROJECT_DIR$/src/main/java/libraryservice/StaticMovieData.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/tableStringFormatter/BookTableStringFormatter.java" afterPath="$PROJECT_DIR$/src/main/java/tablestringformatter/BookTableStringFormatter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/tableStringFormatter/MovieTableStringFormatter.java" afterPath="$PROJECT_DIR$/src/main/java/tablestringformatter/MovieTableStringFormatter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/tableStringFormatter/TableStringFormatter.java" afterPath="$PROJECT_DIR$/src/main/java/tablestringformatter/TableStringFormatter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/database/LibraryLoanableDatabaseTest.java" afterPath="$PROJECT_DIR$/src/test/java/libraryservice/LibraryLoanableDatabaseTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5/fileContent/fileContent.lock" afterPath="$PROJECT_DIR$/.gradle/3.5/fileContent/fileContent.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.5/taskHistory/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.5/taskHistory/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/jvmClassSignatures.bin" afterPath="$PROJECT_DIR$/.gradle/3.5/taskHistory/jvmClassSignatures.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/BibliotecaApp.class" afterPath="$PROJECT_DIR$/build/classes/main/BibliotecaApp.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/menuprocessor/BorrowBookMenu.class" afterPath="$PROJECT_DIR$/build/classes/main/menuprocessor/BorrowBookMenu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/menuprocessor/BorrowLoanableMenu.class" afterPath="$PROJECT_DIR$/build/classes/main/menuprocessor/BorrowLoanableMenu.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/menuprocessor/BorrowMovieMenu.class" afterPath="$PROJECT_DIR$/build/classes/main/menuprocessor/BorrowMovieMenu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/menuprocessor/MainMenu.class" afterPath="$PROJECT_DIR$/build/classes/main/menuprocessor/MainMenu.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/menuprocessor/MenuRouter.class" afterPath="$PROJECT_DIR$/build/classes/main/menuprocessor/MenuRouter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/menuprocessor/ReturnBookMenu.class" afterPath="$PROJECT_DIR$/build/classes/main/menuprocessor/ReturnBookMenu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/menuprocessor/ReturnLoanableMenu.class" afterPath="$PROJECT_DIR$/build/classes/main/menuprocessor/ReturnLoanableMenu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/menuprocessor/ReturnMovieMenu.class" afterPath="$PROJECT_DIR$/build/classes/main/menuprocessor/ReturnMovieMenu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/model/User.class" afterPath="$PROJECT_DIR$/build/classes/main/model/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/tableStringFormatter/BookTableStringFormatter.class" afterPath="$PROJECT_DIR$/build/classes/main/tableStringFormatter/BookTableStringFormatter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/tableStringFormatter/MovieTableStringFormatter.class" afterPath="$PROJECT_DIR$/build/classes/main/tableStringFormatter/MovieTableStringFormatter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/tableStringFormatter/TableStringFormatter.class" afterPath="$PROJECT_DIR$/build/classes/main/tableStringFormatter/TableStringFormatter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/distributions/twu-biblioteca-terencelim-1.0-SNAPSHOT.tar" afterPath="$PROJECT_DIR$/build/distributions/twu-biblioteca-terencelim-1.0-SNAPSHOT.tar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/distributions/twu-biblioteca-terencelim-1.0-SNAPSHOT.zip" afterPath="$PROJECT_DIR$/build/distributions/twu-biblioteca-terencelim-1.0-SNAPSHOT.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/twu-biblioteca-terencelim-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/build/libs/twu-biblioteca-terencelim-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/BookTableStringFormatterTest.class" afterPath="$PROJECT_DIR$/build/classes/test/BookTableStringFormatterTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/BorrowBookMenuTest.class" afterPath="$PROJECT_DIR$/build/classes/test/BorrowBookMenuTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/LibraryBookDatabaseTest.class" afterPath="$PROJECT_DIR$/build/classes/test/LibraryBookDatabaseTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/BookTableStringFormatterTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/BookTableStringFormatterTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/BookTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/BookTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/BorrowBookMenuTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/BorrowBookMenuTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/LibraryBookDatabaseTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/LibraryBookDatabaseTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/MainMenuTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/MainMenuTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/MenuRouterTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/MenuRouterTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.MovieTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/model.MovieTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/model.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/model.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-BookTableStringFormatterTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-BookTableStringFormatterTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-BookTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-BookTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-BorrowBookMenuTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-BorrowBookMenuTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-LibraryBookDatabaseTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-LibraryBookDatabaseTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-MainMenuTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-MainMenuTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-MenuRouterTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-MenuRouterTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/test/TEST-model.MovieTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-model.MovieTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/BibliotecaApp.java" afterPath="$PROJECT_DIR$/src/main/java/BibliotecaApp.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/menuprocessor/BorrowBookMenu.java" afterPath="$PROJECT_DIR$/src/main/java/menuprocessor/BorrowBookMenu.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/menuprocessor/BorrowLoanableMenu.java" afterPath="$PROJECT_DIR$/src/main/java/menuprocessor/BorrowLoanableMenu.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/menuprocessor/BorrowMovieMenu.java" afterPath="$PROJECT_DIR$/src/main/java/menuprocessor/BorrowMovieMenu.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/menuprocessor/MainMenu.java" afterPath="$PROJECT_DIR$/src/main/java/menuprocessor/MainMenu.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/menuprocessor/MenuRouter.java" afterPath="$PROJECT_DIR$/src/main/java/menuprocessor/MenuRouter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/menuprocessor/ReturnBookMenu.java" afterPath="$PROJECT_DIR$/src/main/java/menuprocessor/ReturnBookMenu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tableStringFormatter/TableStringFormatter.java" afterPath="$PROJECT_DIR$/src/main/java/tableStringFormatter/TableStringFormatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/menuprocessor/ReturnLoanableMenu.java" afterPath="$PROJECT_DIR$/src/main/java/menuprocessor/ReturnLoanableMenu.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/menuprocessor/ReturnMovieMenu.java" afterPath="$PROJECT_DIR$/src/main/java/menuprocessor/ReturnMovieMenu.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/model/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/BookTableStringFormatterTest.java" afterPath="$PROJECT_DIR$/src/test/java/BookTableStringFormatterTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/BorrowBookMenuTest.java" afterPath="$PROJECT_DIR$/src/test/java/BorrowBookMenuTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/LibraryBookDatabaseTest.java" afterPath="$PROJECT_DIR$/src/test/java/LibraryBookDatabaseTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/MainMenuTest.java" afterPath="$PROJECT_DIR$/src/test/java/MainMenuTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/MenuRouterTest.java" afterPath="$PROJECT_DIR$/src/test/java/MenuRouterTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -85,68 +90,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MenuRouter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/menuprocessor/MenuRouter.java">
+      <file leaf-file-name="BibliotecaApp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/BibliotecaApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="59" column="37" lean-forward="false" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
+            <state relative-caret-position="-69">
+              <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MenuRouterTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/MenuRouterTest.java">
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="42" column="75" lean-forward="false" selection-start-line="42" selection-start-column="75" selection-end-line="42" selection-end-column="75" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LibraryLoanableDatabase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/database/LibraryLoanableDatabase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+            <state relative-caret-position="420">
+              <caret line="32" column="57" lean-forward="false" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
               <folding>
-                <element signature="method#checkoutLoanable#0;class#LibraryLoanableDatabase#0" expanded="false" />
-                <element signature="method#returnLoanable#0;class#LibraryLoanableDatabase#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainMenu.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/menuprocessor/MainMenu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="46" column="53" lean-forward="false" selection-start-line="46" selection-start-column="53" selection-end-line="46" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BorrowBookMenu.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/menuprocessor/BorrowBookMenu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BorrowMovieMenu.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/menuprocessor/BorrowMovieMenu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#724#725#0" expanded="true" />
+                <element signature="e#798#799#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -158,8 +119,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -557,16 +518,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/BookStringBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/User.java" />
-        <option value="$PROJECT_DIR$/src/test/java/BookStringBuilderTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Book.java" />
-        <option value="$PROJECT_DIR$/src/test/java/BookDatabaseTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/BookReturnMenu.java" />
-        <option value="$PROJECT_DIR$/src/test/java/BookReturnMenuTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/BookTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/MockBookDatabase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/BookDatabase.java" />
         <option value="$PROJECT_DIR$/src/main/java/BookDatabaseMenu.java" />
         <option value="$PROJECT_DIR$/src/main/java/LibraryBookDatabase.java" />
         <option value="$PROJECT_DIR$/src/main/java/BookMenu.java" />
@@ -575,10 +526,7 @@
         <option value="$PROJECT_DIR$/src/main/java/ReturnBookMenu.java" />
         <option value="$PROJECT_DIR$/src/main/java/MainMenu.java" />
         <option value="$PROJECT_DIR$/src/main/java/MenuRouter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/BibliotecaApp.java" />
         <option value="$PROJECT_DIR$/src/test/java/model/MovieTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/MainMenuTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/helper/BookStringBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/helper/TableStringFormatter.java" />
         <option value="$PROJECT_DIR$/src/main/java/database/MockBookDatabase.java" />
@@ -605,9 +553,22 @@
         <option value="$PROJECT_DIR$/src/main/java/menuprocessor/ReturnMovieMenu.java" />
         <option value="$PROJECT_DIR$/src/main/java/tableStringFormatter/TableStringFormatter.java" />
         <option value="$PROJECT_DIR$/src/main/java/tableStringFormatter/BookTableStringFormatter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/menuprocessor/MainMenu.java" />
-        <option value="$PROJECT_DIR$/src/main/java/menuprocessor/MenuRouter.java" />
+        <option value="$PROJECT_DIR$/src/test/java/model/UserTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/database/StaticMovieDataTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/database/StaticUserData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/userauthentication/StaticUserData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/userauthentication/UserAuthentication.java" />
+        <option value="$PROJECT_DIR$/src/test/java/userauthentication/UserAuthenticationTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/MenuRouterTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/menuprocessor/MainMenu.java" />
+        <option value="$PROJECT_DIR$/src/test/java/MainMenuTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/menuprocessor/MenuRouter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/menuprocessor/LoginMenu.java" />
+        <option value="$PROJECT_DIR$/src/test/java/menuprocessor/LoginMenuTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/userauthentication/UserAuthenticatorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/userauthentication/UserAuthenticator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/BibliotecaApp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/User.java" />
       </list>
     </option>
   </component>
@@ -749,6 +710,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libraryservice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twu-biblioteca-terencelim" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twu-biblioteca-terencelim" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="main" />
               <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
             </PATH_ELEMENT>
@@ -797,7 +784,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tableStringFormatter" />
+              <option name="myItemId" value="userauthentication" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twu-biblioteca-terencelim" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twu-biblioteca-terencelim" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tablestringformatter" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -875,7 +888,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
+              <option name="myItemId" value="libraryservice" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -898,6 +911,7 @@
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="menuprocessor" />
+      <recent name="userauthentication" />
       <recent name="database" />
       <recent name="model" />
       <recent name="" />
@@ -924,19 +938,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MenuRouterTest">
-    <configuration default="false" name="LibraryLoanableDatabaseTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.All in twu-biblioteca-terencelim_test">
+    <configuration default="false" name="UserAuthenticatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="database.*" />
+          <option name="PATTERN" value="userauthentication.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="twu-biblioteca-terencelim_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="database" />
-      <option name="MAIN_CLASS_NAME" value="database.LibraryLoanableDatabaseTest" />
+      <option name="PACKAGE_NAME" value="userauthentication" />
+      <option name="MAIN_CLASS_NAME" value="userauthentication.UserAuthenticatorTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -951,67 +965,20 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="LibraryLoanableDatabaseTest (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="LoginMenuTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="database.*" />
+          <option name="PATTERN" value="menuprocessor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="twu-biblioteca-terencelim_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="database" />
-      <option name="MAIN_CLASS_NAME" value="database.LibraryLoanableDatabaseTest" />
+      <option name="PACKAGE_NAME" value="menuprocessor" />
+      <option name="MAIN_CLASS_NAME" value="menuprocessor.LoginMenuTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="LibraryLoanableDatabaseTest (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="database.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="twu-biblioteca-terencelim_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="database" />
-      <option name="MAIN_CLASS_NAME" value="database.LibraryLoanableDatabaseTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="All in twu-biblioteca-terencelim_test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="twu-biblioteca-terencelim_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -1033,6 +1000,48 @@
       <option name="MAIN_CLASS_NAME" value="MenuRouterTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MainMenuTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="twu-biblioteca-terencelim_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MainMenuTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="All in twu-biblioteca-terencelim_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="twu-biblioteca-terencelim_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -1259,19 +1268,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.LibraryLoanableDatabaseTest (1)" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.LibraryLoanableDatabaseTest (2)" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.LibraryLoanableDatabaseTest (3)" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.All in twu-biblioteca-terencelim_test (1)" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.MenuRouterTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.UserAuthenticatorTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.LoginMenuTest (1)" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MenuRouterTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.MainMenuTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.All in twu-biblioteca-terencelim_test" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.MenuRouterTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.All in twu-biblioteca-terencelim_test (1)" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.LibraryLoanableDatabaseTest (3)" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.LibraryLoanableDatabaseTest (2)" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.LibraryLoanableDatabaseTest (1)" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in twu-biblioteca-terencelim_test" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.UserAuthenticatorTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MainMenuTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.MenuRouterTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.LoginMenuTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -1289,39 +1298,40 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_twu-biblioteca-terencelim_test_(1) - 2017.04.24 at 15h 29m 19s.xml">
-      <configuration name="All in twu-biblioteca-terencelim_test (1)" configurationId="JUnit" />
+    <history-entry file="All_in_twu-biblioteca-terencelim_test - 2017.04.25 at 11h 35m 43s.xml">
+      <configuration name="All in twu-biblioteca-terencelim_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_twu-biblioteca-terencelim_test_(1) - 2017.04.24 at 15h 29m 31s.xml">
-      <configuration name="All in twu-biblioteca-terencelim_test (1)" configurationId="JUnit" />
+    <history-entry file="LoginMenuTest - 2017.04.25 at 11h 13m 04s.xml">
+      <configuration name="LoginMenuTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_twu-biblioteca-terencelim_test_(1) - 2017.04.24 at 15h 30m 02s.xml">
-      <configuration name="All in twu-biblioteca-terencelim_test (1)" configurationId="JUnit" />
+    <history-entry file="LoginMenuTest_(1) - 2017.04.25 at 11h 13m 29s.xml">
+      <configuration name="LoginMenuTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_twu-biblioteca-terencelim_test_(1) - 2017.04.24 at 15h 30m 36s.xml">
-      <configuration name="All in twu-biblioteca-terencelim_test (1)" configurationId="JUnit" />
+    <history-entry file="LoginMenuTest_(1) - 2017.04.25 at 11h 14m 09s.xml">
+      <configuration name="LoginMenuTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_twu-biblioteca-terencelim_test_(1) - 2017.04.24 at 15h 30m 51s.xml">
-      <configuration name="All in twu-biblioteca-terencelim_test (1)" configurationId="JUnit" />
+    <history-entry file="MainMenuTest - 2017.04.25 at 11h 18m 43s.xml">
+      <configuration name="MainMenuTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LibraryLoanableDatabaseTest_(3) - 2017.04.24 at 14h 21m 26s.xml">
-      <configuration name="LibraryLoanableDatabaseTest (3)" configurationId="JUnit" />
+    <history-entry file="MainMenuTest - 2017.04.25 at 11h 19m 26s.xml">
+      <configuration name="MainMenuTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LibraryLoanableDatabaseTest_(3) - 2017.04.24 at 14h 21m 58s.xml">
-      <configuration name="LibraryLoanableDatabaseTest (3)" configurationId="JUnit" />
+    <history-entry file="MainMenuTest - 2017.04.25 at 11h 19m 36s.xml">
+      <configuration name="MainMenuTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LibraryLoanableDatabaseTest_(3) - 2017.04.24 at 14h 35m 57s.xml">
-      <configuration name="LibraryLoanableDatabaseTest (3)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LibraryLoanableDatabaseTest_(3) - 2017.04.24 at 15h 28m 49s.xml">
-      <configuration name="LibraryLoanableDatabaseTest (3)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MenuRouterTest - 2017.04.24 at 15h 51m 55s.xml">
+    <history-entry file="MenuRouterTest - 2017.04.25 at 11h 16m 00s.xml">
       <configuration name="MenuRouterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MenuRouterTest - 2017.04.25 at 11h 16m 09s.xml">
+      <configuration name="MenuRouterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserAuthenticatorTest - 2017.04.25 at 11h 33m 24s.xml">
+      <configuration name="UserAuthenticatorTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1339,10 +1349,10 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24819277" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24819277" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53361946" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28674698" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28674698" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20958512" sideWeight="0.49371633" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1398,14 +1408,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/menuprocessor/ReturnBookMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/menuprocessor/MenuRouter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
@@ -1479,13 +1481,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/model/MovieTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="422">
@@ -1500,14 +1495,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="12" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MainMenuTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="27" column="65" lean-forward="false" selection-start-line="27" selection-start-column="65" selection-end-line="27" selection-end-column="65" />
           <folding />
         </state>
       </provider>
@@ -1552,15 +1539,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BibliotecaApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/database/LibraryLoanableDatabaseTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/libraryservice/LibraryLoanableDatabaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="439">
           <caret line="69" column="57" lean-forward="false" selection-start-line="69" selection-start-column="57" selection-end-line="69" selection-end-column="57" />
@@ -1578,38 +1557,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/menuprocessor/ReturnLoanableMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <element signature="method#ReturnLoanableMenu#0;class#ReturnLoanableMenu#0" expanded="false" />
-            <element signature="method#getOptions#0;class#ReturnLoanableMenu#0" expanded="false" />
-            <element signature="method#getResponse#0;class#ReturnLoanableMenu#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/database/StaticBookData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="14" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/menuprocessor/BorrowLoanableMenuTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/menuprocessor/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -1619,7 +1570,7 @@
         <state relative-caret-position="150">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1632,15 +1583,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/menuprocessor/BorrowLoanableMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="14" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tableStringFormatter/BookTableStringFormatter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/tablestringformatter/BookTableStringFormatter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
           <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
@@ -1650,23 +1593,12 @@
             <element signature="method#buildId#0;class#BookTableStringFormatter#0" expanded="false" />
             <element signature="method#buildYear#0;class#BookTableStringFormatter#0" expanded="false" />
             <element signature="method#buildHeader#0;class#BookTableStringFormatter#0" expanded="false" />
-            <element signature="e#2400#2442#0" expanded="false" />
+            <element signature="e#2377#2419#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/database/StaticMovieData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
-          <folding>
-            <element signature="e#1388#1389#0" expanded="false" />
-            <element signature="e#1417#1418#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tableStringFormatter/MovieTableStringFormatter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/tablestringformatter/MovieTableStringFormatter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
           <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
@@ -1680,7 +1612,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tableStringFormatter/TableStringFormatter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/tablestringformatter/TableStringFormatter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
@@ -1708,16 +1640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/menuprocessor/BorrowBookMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/menuprocessor/BorrowMovieMenu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1728,38 +1650,189 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/menuprocessor/MenuRouter.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/database/StaticMovieDataTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="59" column="37" lean-forward="false" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
+        <state relative-caret-position="105">
+          <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MenuRouterTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/libraryservice/StaticMovieData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="42" column="75" lean-forward="false" selection-start-line="42" selection-start-column="75" selection-end-line="42" selection-end-column="75" />
-          <folding />
+        <state relative-caret-position="465">
+          <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+          <folding>
+            <element signature="e#1352#1353#0" expanded="false" />
+            <element signature="e#1381#1382#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/database/LibraryLoanableDatabase.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/libraryservice/StaticBookData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="14" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/model/UserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="58" />
           <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/libraryservice/LibraryLoanableDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="e#429#430#0" expanded="false" />
+            <element signature="e#470#471#0" expanded="false" />
             <element signature="method#checkoutLoanable#0;class#LibraryLoanableDatabase#0" expanded="false" />
             <element signature="method#returnLoanable#0;class#LibraryLoanableDatabase#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/menuprocessor/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/menuprocessor/BorrowBookMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="46" lean-forward="false" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/menuprocessor/BorrowLoanableMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="27" column="8" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/MenuRouterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="47" column="55" lean-forward="false" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/menuprocessor/MainMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="46" column="53" lean-forward="false" selection-start-line="46" selection-start-column="53" selection-end-line="46" selection-end-column="53" />
+        <state relative-caret-position="317">
+          <caret line="53" column="38" lean-forward="false" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/MainMenuTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="49" column="56" lean-forward="false" selection-start-line="49" selection-start-column="56" selection-end-line="49" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/menuprocessor/ReturnLoanableMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="10" lean-forward="false" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+          <folding>
+            <element signature="method#ReturnLoanableMenu#0;class#ReturnLoanableMenu#0" expanded="false" />
+            <element signature="method#getOptions#0;class#ReturnLoanableMenu#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/menuprocessor/LoginMenuTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/menuprocessor/LoginMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/userauthentication/UserAuthenticator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/userauthentication/StaticUserData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/userauthentication/UserAuthenticatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="52" lean-forward="false" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/menuprocessor/MenuRouter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="35" column="38" lean-forward="false" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/BibliotecaApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-69">
+          <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="32" column="57" lean-forward="false" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
+          <folding>
+            <element signature="e#724#725#0" expanded="true" />
+            <element signature="e#798#799#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

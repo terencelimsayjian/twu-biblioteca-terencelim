@@ -1,5 +1,5 @@
-import database.LibraryLoanableDatabase;
-import database.StaticBookData;
+import libraryservice.LibraryLoanableDatabase;
+import libraryservice.StaticBookData;
 import model.Book;
 import org.junit.Before;
 import org.junit.Test;

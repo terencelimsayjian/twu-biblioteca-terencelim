@@ -1,10 +1,8 @@
-package database;
+package libraryservice;
 
-import model.Loanable;
 import model.Loanable;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class LibraryLoanableDatabase {
     ArrayList<Loanable> availableLoanables = new ArrayList<>();

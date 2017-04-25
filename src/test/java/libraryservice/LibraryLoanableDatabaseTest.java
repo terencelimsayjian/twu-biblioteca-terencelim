@@ -1,4 +1,4 @@
-package database;
+package libraryservice;
 
 import model.Book;
 import model.Loanable;

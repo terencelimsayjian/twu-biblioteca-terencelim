@@ -1,8 +1,8 @@
 package menuprocessor;
 
-import database.LibraryLoanableDatabase;
+import libraryservice.LibraryLoanableDatabase;
 import model.*;
-import tableStringFormatter.MovieTableStringFormatter;
+import tablestringformatter.MovieTableStringFormatter;
 
 import java.util.ArrayList;
 

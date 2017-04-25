@@ -1,6 +1,6 @@
 package menuprocessor;
 
-import database.LibraryLoanableDatabase;
+import libraryservice.LibraryLoanableDatabase;
 
 public abstract class ReturnLoanableMenu implements Menu {
     public static String invalidLoanableMessage = "Not a valid item to return!";

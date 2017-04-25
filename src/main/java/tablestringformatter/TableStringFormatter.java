@@ -1,4 +1,4 @@
-package tableStringFormatter;
+package tablestringformatter;
 
 public abstract class TableStringFormatter {
     public String divider = " | ";

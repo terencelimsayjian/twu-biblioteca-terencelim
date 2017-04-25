@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="userauthentication.UserAuthenticatorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-04-25T03:34:31" hostname="sg-6.local" time="0.001">
+  <properties/>
+  <testcase name="testAuthenticateUser" classname="userauthentication.UserAuthenticatorTest" time="0.0"/>
+  <testcase name="testWrongLibraryId" classname="userauthentication.UserAuthenticatorTest" time="0.0"/>
+  <system-out><![CDATA[111-1111
+test123
+terence | 111-1111 | test123
+111-1112
+test123
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

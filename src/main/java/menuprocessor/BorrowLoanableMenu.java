@@ -1,6 +1,6 @@
 package menuprocessor;
 
-import database.LibraryLoanableDatabase;
+import libraryservice.LibraryLoanableDatabase;
 
 public abstract class BorrowLoanableMenu implements Menu {
     public static String loanableUnavailableMessage = "That item is not available";
