@@ -51,21 +51,53 @@ public class MenuRouter {
     }
 
     public void setCurrentMenu(int menuIndex) {
-        if (menuIndex == MAIN_MENU) {
-            currentMenu = mainMenu;
-        } else if (menuIndex == BORROW_BOOK_MENU) {
-            currentMenu = borrowBookMenu;
-        } else if (menuIndex == RETURN_BOOK_MENU) {
-            currentMenu = returnBookMenu;
-        } else if (menuIndex == BORROW_MOVIE_MENU) {
-            currentMenu = borrowMovieMenu;
-        } else if (menuIndex == RETURN_MOVIE_MENU) {
-            currentMenu = returnMovieMenu;
-        } else if (menuIndex == LOGIN_MENU) {
-            currentMenu = loginMenu;
-        } else {
-            quitApp();
+
+        switch (menuIndex) {
+            case 1:
+                menuIndex = MAIN_MENU;
+                currentMenu = mainMenu;
+                break;
+            case 2:
+                menuIndex = BORROW_BOOK_MENU;
+                currentMenu = borrowBookMenu;
+                break;
+
+            case 3:
+                menuIndex = RETURN_BOOK_MENU;
+                currentMenu = returnBookMenu;
+                break;
+            case 4:
+                menuIndex = BORROW_MOVIE_MENU;
+                currentMenu = borrowMovieMenu;
+                break;
+            case 5:
+                menuIndex = RETURN_MOVIE_MENU;
+                currentMenu = returnMovieMenu;
+                break;
+            case 6:
+                menuIndex = LOGIN_MENU;
+                currentMenu = loginMenu;
+                break;
+            default:
+                quitApp();
+                break;
         }
+
+//        if (menuIndex == MAIN_MENU) {
+//            currentMenu = mainMenu;
+//        } else if (menuIndex == BORROW_BOOK_MENU) {
+//            currentMenu = borrowBookMenu;
+//        } else if (menuIndex == RETURN_BOOK_MENU) {
+//            currentMenu = returnBookMenu;
+//        } else if (menuIndex == BORROW_MOVIE_MENU) {
+//            currentMenu = borrowMovieMenu;
+//        } else if (menuIndex == RETURN_MOVIE_MENU) {
+//            currentMenu = returnMovieMenu;
+//        } else if (menuIndex == LOGIN_MENU) {
+//            currentMenu = loginMenu;
+//        } else {
+//            quitApp();
+//        }
     }
 
     private void quitApp() {
