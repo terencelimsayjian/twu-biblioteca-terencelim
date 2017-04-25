@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MenuRouterTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-04-24T02:51:03" hostname="sg-6.local" time="0.0">
+<testsuite name="MenuRouterTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-04-24T06:48:30" hostname="sg-6.local" time="0.001">
   <properties/>
-  <testcase name="testBorrowBookMenu" classname="MenuRouterTest" time="0.0"/>
+  <testcase name="testBorrowBookMenu" classname="MenuRouterTest" time="0.001"/>
   <testcase name="testBorrowMovieMenu" classname="MenuRouterTest" time="0.0"/>
   <testcase name="testReturnBookMenu" classname="MenuRouterTest" time="0.0"/>
   <testcase name="testMainMenu" classname="MenuRouterTest" time="0.0"/>

@@ -6,16 +6,17 @@ import tableStringFormatter.MovieTableStringFormatter;
 
 import java.util.ArrayList;
 
-public class BorrowMovieMenu extends BorrowLoanableMenu {
-    public BorrowMovieMenu(LibraryLoanableDatabase libraryMovieDatabase, MenuRouter menuRouter) {
-        super(libraryMovieDatabase, menuRouter);
+public class ReturnMovieMenu extends ReturnLoanableMenu {
+
+    public ReturnMovieMenu(LibraryLoanableDatabase libraryBookDatabase, MenuRouter menuRouter) {
+        super(libraryBookDatabase, menuRouter);
     }
 
     protected String getLoanableTable() {
-        ArrayList<Loanable> availableLoanables = libraryLoanableDatabase.getAvailableLoanables();
+        ArrayList<Loanable> loanablesOnLoan = libraryLoanableDatabase.getLoanablesOnLoan();
 
         ArrayList<Movie> movieList = new ArrayList<>();
-        for (Loanable loanable : availableLoanables) {
+        for (Loanable loanable : loanablesOnLoan) {
             movieList.add((Movie) loanable);
         }
 

@@ -8,13 +8,15 @@ public class MenuRouter {
     public static int BORROW_BOOK_MENU = 2;
     public static int RETURN_BOOK_MENU = 3;
     public static int BORROW_MOVIE_MENU = 4;
+    public static int RETURN_MOVIE_MENU = 5;
 
     Menu currentMenu;
     Menu mainMenu;
     Menu borrowBookMenu;
     Menu returnBookMenu;
     Menu borrowMovieMenu;
-    public boolean appRunning;
+    Menu returnMovieMenu;
+    public boolean appRunning = true;
 
     public MenuRouter() {
 
@@ -28,9 +30,9 @@ public class MenuRouter {
         borrowBookMenu = new BorrowBookMenu(libraryBookDatabase, this);
         returnBookMenu = new ReturnBookMenu(libraryBookDatabase, this);
         borrowMovieMenu = new BorrowMovieMenu(libraryMovieDatabase, this);
+        returnMovieMenu = new ReturnMovieMenu(libraryMovieDatabase, this);
 
         currentMenu = mainMenu;
-        appRunning = true;
     }
 
     public String getResponse(int userInput) {
@@ -54,6 +56,8 @@ public class MenuRouter {
             currentMenu = returnBookMenu;
         } else if (menuIndex == BORROW_MOVIE_MENU) {
             currentMenu = borrowMovieMenu;
+        } else if (menuIndex == RETURN_MOVIE_MENU) {
+            currentMenu = returnMovieMenu;
         } else {
             quitApp();
         }
