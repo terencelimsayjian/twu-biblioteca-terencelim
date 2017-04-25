@@ -6,6 +6,7 @@ public class Movie implements Loanable {
     private String year;
     private String director;
     private int movieRating;
+    private String loanerId;
 
     public Movie(int id, String title, String year, String director, int movieRating) {
         this.id = id;
@@ -17,6 +18,16 @@ public class Movie implements Loanable {
 
     public int getId() {
         return id;
+    }
+
+    @Override
+    public String getLoanerId() {
+        return loanerId;
+    }
+
+    @Override
+    public void setLoanerId(String libraryId) {
+        loanerId = libraryId;
     }
 
     public String getTitle() {

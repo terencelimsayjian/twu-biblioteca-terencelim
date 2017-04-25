@@ -16,17 +16,25 @@ public class UserAuthenticatorTest {
 
     @Test
     public void testAuthenticateUser() throws Exception {
-        UserAuthenticator userAuthenticator = new UserAuthenticator();
-        User authenticatedUser = userAuthenticator.authenticate("111-1111", "test123");
+        userAuthenticator = new UserAuthenticator();
+        boolean authenticatedUser = userAuthenticator.authenticate("111-1111", "test123");
 
-        assertEquals(authenticatedUser != null, true);
+        assertEquals(authenticatedUser, true);
     }
 
     @Test
     public void testWrongLibraryId() throws Exception {
-        UserAuthenticator userAuthenticator = new UserAuthenticator();
-        User authenticatedUser = userAuthenticator.authenticate("111-1112", "test123");
+        userAuthenticator = new UserAuthenticator();
+        boolean authenticatedUser = userAuthenticator.authenticate("111-1112", "test123");
 
-        assertEquals(authenticatedUser, null);
+        assertEquals(authenticatedUser, false);
+    }
+
+    @Test
+    public void testSetCurrentUser() throws Exception {
+        userAuthenticator = new UserAuthenticator();
+        userAuthenticator.authenticate("222-2222", "test123");
+
+        assertEquals(UserAuthenticator.currentUser != null, true);
     }
 }

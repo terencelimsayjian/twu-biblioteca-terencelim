@@ -22,7 +22,7 @@ public class ReturnBookMenu extends ReturnLoanableMenu {
         }
 
         BookTableStringFormatter bookTableStringFormatter = new BookTableStringFormatter();
-        return bookTableStringFormatter.getTable(bookList);
+        return bookTableStringFormatter.getTableWithLoaner(bookList);
     }
 
 }

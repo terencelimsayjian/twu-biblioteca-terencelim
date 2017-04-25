@@ -1,6 +1,8 @@
 package menuprocessor;
 
 import libraryservice.*;
+import model.User;
+import userauthentication.UserAuthenticator;
 
 public class MenuRouter {
     public static int EXIT = 0;
@@ -18,15 +20,16 @@ public class MenuRouter {
     Menu borrowMovieMenu;
     Menu returnMovieMenu;
     Menu loginMenu;
+
     public boolean appRunning = true;
 
     public MenuRouter() {
 
-        StaticBookData staticBookData = new StaticBookData();
-        LibraryLoanableDatabase libraryBookDatabase = new LibraryLoanableDatabase(staticBookData.getBooks());
+        BookData bookData = new BookData();
+        LibraryLoanableDatabase libraryBookDatabase = new LibraryLoanableDatabase(bookData.getBooks());
 
-        StaticMovieData staticMovieData = new StaticMovieData();
-        LibraryLoanableDatabase libraryMovieDatabase = new LibraryLoanableDatabase(staticMovieData.getMovies());
+        MovieData movieData = new MovieData();
+        LibraryLoanableDatabase libraryMovieDatabase = new LibraryLoanableDatabase(movieData.getMovies());
 
         mainMenu = new MainMenu(this);
         borrowBookMenu = new BorrowBookMenu(libraryBookDatabase, this);
@@ -51,7 +54,6 @@ public class MenuRouter {
     }
 
     public void setCurrentMenu(int menuIndex) {
-
         switch (menuIndex) {
             case 1:
                 menuIndex = MAIN_MENU;
@@ -82,22 +84,6 @@ public class MenuRouter {
                 quitApp();
                 break;
         }
-
-//        if (menuIndex == MAIN_MENU) {
-//            currentMenu = mainMenu;
-//        } else if (menuIndex == BORROW_BOOK_MENU) {
-//            currentMenu = borrowBookMenu;
-//        } else if (menuIndex == RETURN_BOOK_MENU) {
-//            currentMenu = returnBookMenu;
-//        } else if (menuIndex == BORROW_MOVIE_MENU) {
-//            currentMenu = borrowMovieMenu;
-//        } else if (menuIndex == RETURN_MOVIE_MENU) {
-//            currentMenu = returnMovieMenu;
-//        } else if (menuIndex == LOGIN_MENU) {
-//            currentMenu = loginMenu;
-//        } else {
-//            quitApp();
-//        }
     }
 
     private void quitApp() {

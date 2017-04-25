@@ -1,4 +1,4 @@
-import libraryservice.StaticBookData;
+import libraryservice.BookData;
 import tablestringformatter.BookTableStringFormatter;
 import model.Book;
 import org.junit.Before;
@@ -17,7 +17,7 @@ public class BookTableStringFormatterTest {
 
     @Before
     public void setUp() {
-        StaticBookData staticBookData = new StaticBookData();
+        BookData bookData = new BookData();
 
         bookTableStringFormatter = new BookTableStringFormatter();
         desiredIdStringLength = bookTableStringFormatter.idStringLength;

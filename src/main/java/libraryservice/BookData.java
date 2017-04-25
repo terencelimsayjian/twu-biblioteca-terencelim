@@ -4,10 +4,10 @@ import model.Book;
 
 import java.util.ArrayList;
 
-public class StaticBookData {
+public class BookData {
     ArrayList<Book> books = new ArrayList<>();
 
-    public StaticBookData() {
+    public BookData() {
         Book book1 = new Book(1,  "Harry Potter", "J.K. Rowling", 2003);
         Book book2 = new Book(2,  "Lord Of The Rings", "J.R.R Tolkein", 1978);
         Book book3 = new Book(3, "The Magicians", "Lev Grossman", 2006);

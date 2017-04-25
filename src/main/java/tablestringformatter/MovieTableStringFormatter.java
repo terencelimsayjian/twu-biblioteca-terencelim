@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class MovieTableStringFormatter extends TableStringFormatter {
     public int idStringLength = 3;
-    public int nameStringLength = 35;
+    public int nameStringLength = 30;
     public int yearStringLength = 5;
     public int directorStringLength = 25;
     public int movieRatingStringLength = 7;
@@ -45,7 +45,7 @@ public class MovieTableStringFormatter extends TableStringFormatter {
     }
 
     public String buildMovieRating(Movie movie) {
-        return formatStringToFixedLength(movie.getMovieRatingString(), directorStringLength);
+        return formatStringToFixedLength(movie.getMovieRatingString(), movieRatingStringLength);
     }
 
     public String buildHeader() {
@@ -87,4 +87,20 @@ public class MovieTableStringFormatter extends TableStringFormatter {
 
         return movieTable;
     }
+
+    public String getTableWithLoaner(ArrayList<Movie> movieList) {
+        String movieTable = "";
+
+        movieTable = movieTable + buildHeader() + divider + "LoanerID" + "\n";
+        movieTable = movieTable + buildDivider() + "-----------" + "\n";
+
+        for (Movie movie : movieList) {
+            movieTable = movieTable + build(movie)+ divider + movie.getLoanerId()  + "\n";
+        }
+
+        movieTable = movieTable + buildDivider() + "-----------";
+
+        return movieTable;
+    }
+
 }

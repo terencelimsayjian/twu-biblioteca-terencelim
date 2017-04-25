@@ -1,6 +1,7 @@
 package libraryservice;
 
 import model.Loanable;
+import userauthentication.UserAuthenticator;
 
 import java.util.ArrayList;
 
@@ -22,10 +23,14 @@ public class LibraryLoanableDatabase {
 
     public boolean checkoutLoanable(int loanableId) {
         boolean succeededCheckout = false;
+
         for (Loanable loanable : availableLoanables) {
             if (loanable.getId() == loanableId) {
                 availableLoanables.remove(loanable);
                 loanablesOnLoan.add(loanable);
+
+                loanable.setLoanerId(UserAuthenticator.currentUser.getLibraryId());
+
                 succeededCheckout = true;
                 break;
             }

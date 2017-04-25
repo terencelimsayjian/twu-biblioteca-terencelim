@@ -4,10 +4,10 @@ import model.Movie;
 
 import java.util.ArrayList;
 
-public class StaticMovieData {
+public class MovieData {
     ArrayList<Movie> movies = new ArrayList<>();
 
-    public StaticMovieData() {
+    public MovieData() {
         Movie movie1 = new Movie(1, "Inception", "2010","Christopher Nolan", 8);
         Movie movie2 = new Movie(2, "Rogue One: A Star Wars Story", "2016","J.J. Abrams", 8);
         Movie movie3 = new Movie(3, "La La Land", "2016","Damien Chazelle", 9);

@@ -9,6 +9,7 @@ public class BookTableStringFormatter extends TableStringFormatter {
     public int titleStringLength = 40;
     public int authorStringLength = 20;
     public int yearStringLength = 5;
+    public int loanderIdStringLength = 8;
 
     public BookTableStringFormatter() {
         totalStringLength = idStringLength + divider.length() +
@@ -68,14 +69,26 @@ public class BookTableStringFormatter extends TableStringFormatter {
         bookTable = bookTable + buildHeader() + "\n";
         bookTable = bookTable  + buildDivider() + "\n";
 
-//        for (Loanable book : bookList) {
-//            bookTable = bookTable + build((Book)book) + "\n";
-//        }
         for (Book book : bookList) {
             bookTable = bookTable + build(book) + "\n";
         }
 
         bookTable = bookTable + buildDivider();
+
+        return bookTable;
+    }
+
+    public String getTableWithLoaner(ArrayList<Book> bookList) {
+        String bookTable = "";
+
+        bookTable = bookTable + buildHeader() + divider + "LoanerID" + "\n";
+        bookTable = bookTable  + buildDivider() + "-----------" + "\n";
+
+        for (Book book : bookList) {
+            bookTable = bookTable + build(book) + divider + book.getLoanerId() + "\n";
+        }
+
+        bookTable = bookTable + buildDivider() + "-----------";
 
         return bookTable;
     }

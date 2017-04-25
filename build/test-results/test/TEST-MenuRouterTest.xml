@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MenuRouterTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-04-25T03:34:31" hostname="sg-6.local" time="0.001">
+<testsuite name="MenuRouterTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-04-25T06:36:57" hostname="sg-6.local" time="0.001">
   <properties/>
   <testcase name="testBorrowBookMenu" classname="MenuRouterTest" time="0.0"/>
   <testcase name="testLoginMenu" classname="MenuRouterTest" time="0.0"/>
   <testcase name="testBorrowMovieMenu" classname="MenuRouterTest" time="0.0"/>
-  <testcase name="testReturnBookMenu" classname="MenuRouterTest" time="0.001"/>
+  <testcase name="testReturnBookMenu" classname="MenuRouterTest" time="0.0"/>
   <testcase name="testReturnMenu" classname="MenuRouterTest" time="0.0"/>
   <testcase name="testMainMenu" classname="MenuRouterTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>

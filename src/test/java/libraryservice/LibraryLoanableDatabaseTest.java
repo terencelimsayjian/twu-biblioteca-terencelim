@@ -1,19 +1,22 @@
 package libraryservice;
 
-import model.Book;
-import model.Loanable;
+import model.*;
 import org.junit.Before;
 import org.junit.Test;
+import userauthentication.UserAuthenticator;
 
 import java.util.ArrayList;
 
 import static org.junit.Assert.*;
+import static org.mockito.Mockito.mock;
 
 public class LibraryLoanableDatabaseTest {
     LibraryLoanableDatabase libraryBookDatabase;
 
     @Before
     public void setUp() throws Exception {
+        UserAuthenticator.currentUser = new User("terence", "111-1111", "test123");
+
         Book book1 = new Book(1,  "Harry Potter", "J.K. Rowling", 2003);
         Book book2 = new Book(2,  "Lord Of The Rings", "J.R.R Tolkein", 1978);
         Book book3 = new Book(3, "The Magicians", "Lev Grossman", 2006);
@@ -70,5 +73,11 @@ public class LibraryLoanableDatabaseTest {
         assertEquals(libraryBookDatabase.returnLoanable(3), false);
         assertEquals(libraryBookDatabase.getAvailableLoanables().size() == 4, true);
         assertEquals(libraryBookDatabase.getLoanablesOnLoan().size() == 0, true);
+    }
+
+    @Test
+    public void testLibraryIdAfterCheckout() throws Exception {
+        assertEquals(libraryBookDatabase.checkoutLoanable(1), true);
+        assertEquals(libraryBookDatabase.getLoanablesOnLoan().get(0).getLoanerId().equals("111-1111"), true);
     }
 }

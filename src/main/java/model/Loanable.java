@@ -6,4 +6,8 @@ public interface Loanable {
 
     public String getTitle();
 
+    public String getLoanerId();
+
+    public void setLoanerId(String libraryId);
+
 }

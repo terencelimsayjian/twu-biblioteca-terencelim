@@ -1,3 +1,5 @@
+package menuprocessor;
+
 import menuprocessor.MainMenu;
 import menuprocessor.MenuRouter;
 import org.junit.Before;

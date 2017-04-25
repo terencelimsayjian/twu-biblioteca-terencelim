@@ -21,6 +21,6 @@ public class ReturnMovieMenu extends ReturnLoanableMenu {
         }
 
         MovieTableStringFormatter movieTableStringFormatter = new MovieTableStringFormatter();
-        return movieTableStringFormatter.getTable(movieList);
+        return movieTableStringFormatter.getTableWithLoaner(movieList);
     }
 }

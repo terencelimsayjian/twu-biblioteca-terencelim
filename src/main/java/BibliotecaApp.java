@@ -11,12 +11,13 @@ public class BibliotecaApp {
 
     public static void main(String[] args) {
         MenuRouter menuRouter = new MenuRouter();
+        UserAuthenticator userAuthenticator = new UserAuthenticator();
         print(welcomeMessage);
 
         while (menuRouter.appRunning) {
             if (menuRouter.getCurrentMenu() instanceof LoginMenu) {
-                processLogin(menuRouter);
-             } else {
+                processUserLogin(menuRouter, userAuthenticator);
+            } else {
                 print(menuRouter.getOptions());
                 int input = getIntegerInput();
                 print(menuRouter.getResponse(input));
@@ -25,22 +26,18 @@ public class BibliotecaApp {
         }
     }
 
-    private static void processLogin(MenuRouter menuRouter) {
+    private static void processUserLogin(MenuRouter menuRouter, UserAuthenticator userAuthenticator) {
         print(menuRouter.getOptions());
         String libraryIdInput = getStringInput();
 
         print("Enter Password:");
         String passwordInput = getStringInput();
 
-        print(libraryIdInput);
-        print(passwordInput);
+        boolean authenticatedUser = userAuthenticator.authenticate(libraryIdInput, passwordInput);
 
-        UserAuthenticator userAuthenticator = new UserAuthenticator();
-        User currentUser = userAuthenticator.authenticate(libraryIdInput, passwordInput);
-
-        if (currentUser != null) {
+        if (authenticatedUser) {
             print(menuRouter.getResponse(LoginMenu.AUTHENTICATION_SUCCESS));
-        } else {
+        } else if (!authenticatedUser) {
             print(menuRouter.getResponse(LoginMenu.AUTHENTICATION_FAILURE));
         }
     }

@@ -1,5 +1,7 @@
 package menuprocessor;
 
+import userauthentication.UserAuthenticator;
+
 public class LoginMenu implements Menu {
     public static int AUTHENTICATION_SUCCESS = 1;
     public static int AUTHENTICATION_FAILURE = 2;
@@ -8,8 +10,10 @@ public class LoginMenu implements Menu {
     public static String authenticationFailureMessage = "Wrong credentials!";
 
     MenuRouter menuRouter;
+    UserAuthenticator userAuthenticator;
 
     public LoginMenu(MenuRouter menuRouter) {
+        this.userAuthenticator = userAuthenticator;
         this.menuRouter = menuRouter;
     }
 
@@ -26,11 +30,11 @@ public class LoginMenu implements Menu {
             menuMessage = authenticationSuccessMessage;
         } else if (input == AUTHENTICATION_FAILURE) {
             menuMessage = authenticationFailureMessage;
-        } else if (input == MenuRouter.EXIT) {
-            menuRouter.setCurrentMenu(MenuRouter.MAIN_MENU);
-            menuMessage = "";
         }
+
+        menuRouter.setCurrentMenu(MenuRouter.MAIN_MENU);
 
         return menuMessage;
     }
+
 }
